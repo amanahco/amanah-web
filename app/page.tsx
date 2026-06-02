@@ -1,15 +1,19 @@
 /**
  * UI: Amanah Web Storefront - Landing / Our Story
  * Description: Clean, privacy-first digital gateway.
- * Amanah Collective Ltd ©️
- * © 2026 Amanah Co. & Gemini Collaboration. All Rights Reserved.
+ * Amanah Collective Ltd ©️ 2026
  */
 
 import React from 'react';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-8 text-center bg-[#FAF9F6]">
+    <main className="min-h-screen flex flex-col items-center justify-between p-8 text-center bg-[#FAF9F6]">
+      
+      {/* Spacer for vertical centering */}
+      <div className="flex-1"></div>
+
+      {/* Main Content Area */}
       <div className="max-w-3xl space-y-10">
         
         {/* Brand Header */}
@@ -33,6 +37,17 @@ export default function Home() {
         </div>
 
       </div>
+
+      {/* Spacer for vertical centering */}
+      <div className="flex-1"></div>
+
+      {/* Official Footer */}
+      <footer className="w-full pb-4 pt-12 border-t border-[#E8E8E8] opacity-70">
+        <p className="text-xs text-[#4A4A4A] uppercase tracking-wider">
+          Amanah Collective Ltd ©️ 2026
+        </p>
+      </footer>
+
     </main>
   );
 }
