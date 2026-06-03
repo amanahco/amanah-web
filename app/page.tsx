@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - Landing / Our Story
- * Description: Natural scrolling integration. 
- * The archway and text now scroll together as a single, unified piece.
+ * Description: Natural scrolling integration with expanded Menu, Quran Download, and Socials.
+ * Amanah Collective Ltd ©️ 2026
  */
 
 import React from 'react';
@@ -14,13 +14,14 @@ export default function Home() {
     >
       
       {/* The Interactive Text Sanctuary */}
-      {/* Because the background is now on the main tag, this text stays permanently locked inside the alabaster centre when scrolling! */}
       <div className="w-full max-w-3xl flex flex-col items-center text-center mt-8 md:mt-12 px-6 md:px-10">
 
-        {/* Top Navigation */}
-        <nav className="flex space-x-10 md:space-x-16 text-xs font-bold tracking-[0.2em] text-[#B8860B] mb-16 drop-shadow-md">
-          <span className="cursor-pointer hover:text-[#0b2f28] transition-colors">MANIFESTO</span>
-          <span className="cursor-pointer hover:text-[#0b2f28] transition-colors">HARDWARE</span>
+        {/* Expanded Top Navigation Menu */}
+        <nav className="w-full flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-10 text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
+          <a href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</a>
+          <a href="/story" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Our Story</a>
+          <a href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</a>
+          <a href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Quran Download</a>
         </nav>
 
         {/* Brand Header */}
@@ -59,8 +60,17 @@ export default function Home() {
 
       </div>
 
-      {/* Official Footer */}
-      <footer className="mt-auto pt-24 text-center">
+      {/* Official Footer with Social Links */}
+      <footer className="mt-auto pt-24 pb-8 flex flex-col items-center gap-6">
+        
+        {/* Amanah Socials & Support Menu */}
+        <div className="flex space-x-6 md:space-x-8 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] uppercase">
+          <a href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Instagram</a>
+          <a href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">X (Twitter)</a>
+          <a href="/contact" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Support</a>
+        </div>
+
+        {/* Verified Amanah Watermark */}
         <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#0b2f28] uppercase drop-shadow-sm opacity-80">
           Amanah Collective Ltd ©️ 2026
         </p>
