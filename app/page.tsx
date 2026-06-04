@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Flawless Architecture
- * Description: Background is perfectly fixed to the viewport to permanently prevent Vercel stretching.
- * Navigation menu width tightened to perfectly center all items and clear the archway curve.
+ * Description: Background is perfectly fixed to the viewport.
+ * Added a precise transform (translate-x) offset to center the navigation block relative to the archway image.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -14,7 +14,7 @@ export default function Home() {
       
       {/* 1. The Fixed Architecture (Bypasses Vercel stretching & white gaps) */}
       <div className="fixed inset-0 w-full h-[100dvh] z-0 overflow-hidden bg-[#FAF9F6]">
-        {/* Scaling by just 5% from the top-left naturally pushes the bottom-right watermark entirely off the screen. No blurs needed. */}
+        {/* Scaling by just 5% from the top-left naturally pushes the bottom-right watermark entirely off the screen. */}
         <img 
           src="/amanah-sanctuary-bg.png" 
           alt="Amanah Sanctuary" 
@@ -25,8 +25,9 @@ export default function Home() {
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
-        {/* Expanded Top Navigation Menu (Tightened container to clear the left arch edge) */}
-        <nav className="w-full max-w-md mx-auto flex flex-wrap justify-center items-center gap-x-3 gap-y-4 md:gap-x-5 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
+        {/* Expanded Top Navigation Menu */}
+        {/* translate-x-3 perfectly nudges the entire block right to clear the left arch edge */}
+        <nav className="w-full max-w-md mx-auto flex flex-wrap justify-center items-center gap-x-3 gap-y-4 md:gap-x-5 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase translate-x-2 md:translate-x-3">
           <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
           <Link href="/story" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Our Story</Link>
           <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
