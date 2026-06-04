@@ -1,7 +1,7 @@
 /**
- * UI: Amanah Web Storefront - Uncompromising Physical Architecture
- * Description: Physical image scrolling with a precise 4% bottom crop to eradicate the AI watermark.
- * Base Alabaster background ensures a seamless bleed when the image ends.
+ * UI: Amanah Web Storefront - The True Masterpiece Restored
+ * Description: Reverted to the flawless unified scrolling from yesterday.
+ * Added a deep green vignette shadow to naturally swallow the AI watermark without cutting the image.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -10,24 +10,16 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FAF9F6] relative overflow-x-hidden">
+    <main 
+      className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
+      style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
+    >
       
-      {/* 1. The Physical Archway (Watermark Eradicated) */}
-      {/* clip-path permanently slices off the bottom 4% of the image where the AI logo sits */}
-      <div 
-        className="absolute top-0 left-0 w-full z-0 pointer-events-none bg-[#051410]"
-        style={{ clipPath: 'inset(0 0 4% 0)' }} 
-      >
-        <img 
-          src="/amanah-sanctuary-bg.png" 
-          alt="Amanah Digital Sanctuary" 
-          className="w-full h-auto block"
-        />
-      </div>
+      {/* Watermark Assassin: Deep green shadow in the corner to swallow the AI logo */}
+      <div className="absolute bottom-[-5%] right-[-5%] w-[350px] h-[350px] bg-[#051410] blur-3xl z-0 rounded-full opacity-100 pointer-events-none"></div>
 
-      {/* 2. The Typography Sanctuary */}
-      {/* pt-[15vw] dynamically locks the text inside the void no matter the screen size */}
-      <div className="relative z-10 w-full max-w-3xl mx-auto flex flex-col items-center text-center pt-[15vw] md:pt-[10vw] px-6 md:px-10 pb-24">
+      {/* The Interactive Text Sanctuary */}
+      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
         {/* Expanded Top Navigation Menu */}
         <nav className="w-full flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-10 text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
@@ -61,7 +53,7 @@ export default function Home() {
             In Development
           </div>
           <h3 className="text-[#0b2f28] text-2xl md:text-3xl font-bold mb-6">
-            Aerospace Titanium & Ceramic
+            Aerospace Titanium &amp; Ceramic
           </h3>
           <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
             A physical extension of your digital sanctuary. We are engineering a premium wearable device with haptic feedback, completely free of screens and digital distractions. Pure privacy. Quiet luxury.
@@ -74,7 +66,7 @@ export default function Home() {
       </div>
 
       {/* Official Footer with Comprehensive Social Links */}
-      <footer className="relative z-10 mt-auto pt-12 pb-8 flex flex-col items-center gap-6 w-full">
+      <footer className="relative z-10 mt-auto pt-24 pb-8 flex flex-col items-center gap-6 w-full">
         
         {/* Amanah Socials Ecosystem */}
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] uppercase">
