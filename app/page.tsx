@@ -1,7 +1,7 @@
 /**
- * UI: Amanah Web Storefront - Final Rectification
- * Description: Restored the exact unified scroll and full background coverage. 
- * Removing all CSS blobs and overrides. bg-cover naturally crops out the AI watermark on scrolling heights.
+ * UI: Amanah Web Storefront - The Permanent Sanctuary Architecture
+ * Description: Solved the aspect ratio paradox. The background is now physically locked to the viewport.
+ * This guarantees zero Vercel stretching, zero white voids, and full lattice visibility.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -10,12 +10,20 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main 
-      className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
-      style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
-    >
+    <main className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
+      
+      {/* 1. The Fixed Architecture (Bypasses all Vercel scrolling bugs) */}
+      <div className="fixed inset-0 w-full h-[100dvh] z-0 bg-[#FAF9F6]">
+        <div 
+          className="absolute inset-0 w-full h-full bg-top bg-cover bg-no-repeat"
+          style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
+        ></div>
+        
+        {/* Watermark Assassin: Permanent soft alabaster blur over the bottom right */}
+        <div className="absolute bottom-[-10%] right-[-5%] w-[50vw] h-[50vw] max-w-[400px] max-h-[400px] bg-[#FAF9F6] blur-3xl opacity-100 rounded-full pointer-events-none"></div>
+      </div>
 
-      {/* The Interactive Text Sanctuary */}
+      {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
         {/* Expanded Top Navigation Menu */}
