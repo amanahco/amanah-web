@@ -1,8 +1,8 @@
 /**
  * UI: Amanah Web Storefront - Hardware Sanctuary (Gemini Masterpiece)
  * Description: Cinematic gallery layout using the perfected Gemini image.
- * Uses a CSS crop (`scale-[1.05] translate-y-1`) to completely hide the 
- * Gemini watermark while preserving the image's stunning quality.
+ * Uses an aggressive CSS crop (`scale-[1.15] translate-y-4 translate-x-4`) 
+ * to completely eradicate the stubborn Gemini watermark.
  * Features the corrected "Founder's Access" luxury copy.
  * Amanah Collective Ltd ©️ 2026
  */
@@ -31,12 +31,12 @@ export default function Hardware() {
           Silent Companions.
         </h1>
         
-        {/* THE CLEAN CONCEPT IMAGE - Framed perfectly with CSS crop to hide watermark */}
+        {/* THE CLEAN CONCEPT IMAGE - Framed perfectly with aggressive CSS crop to kill watermark */}
         <div className="w-full rounded-[2rem] overflow-hidden shadow-2xl border border-[#B8860B]/10 bg-[#EAE6DF]">
           <img 
             src="/amanah-ring-concept.png" 
             alt="Amanah Dhikr Smart Rings with Islamic Arch Etching" 
-            className="w-full h-auto object-cover transform scale-[1.05] translate-y-1 hover:scale-[1.07] transition-transform duration-700 ease-in-out"
+            className="w-full h-auto object-cover transform scale-[1.15] translate-y-4 translate-x-4 hover:scale-[1.18] transition-transform duration-700 ease-in-out"
           />
         </div>
       </div>
