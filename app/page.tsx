@@ -1,7 +1,7 @@
 /**
- * UI: Amanah Web Storefront - The True Masterpiece Restored
- * Description: Reverted to the flawless unified scrolling from yesterday.
- * Added a deep green vignette shadow to naturally swallow the AI watermark without cutting the image.
+ * UI: Amanah Web Storefront - Final Rectification
+ * Description: Restored the exact unified scroll and full background coverage. 
+ * Removing all CSS blobs and overrides. bg-cover naturally crops out the AI watermark on scrolling heights.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -11,12 +11,9 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main 
-      className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
+      className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
     >
-      
-      {/* Watermark Assassin: Deep green shadow in the corner to swallow the AI logo */}
-      <div className="absolute bottom-[-5%] right-[-5%] w-[350px] h-[350px] bg-[#051410] blur-3xl z-0 rounded-full opacity-100 pointer-events-none"></div>
 
       {/* The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
