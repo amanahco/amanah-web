@@ -1,7 +1,8 @@
 /**
  * UI: Amanah Web Storefront - Hardware Sanctuary
- * Description: Unified Alabaster aesthetic to maintain flawless continuity with the gateway.
- * Added a central exhibition space for the Titanium & Ceramic concept ring image.
+ * Description: Travertine marble aesthetic.
+ * Features the Amanah Ci Dhikr Smart Ring (Titanium & Rose Gold with unified ceramic core).
+ * Updated text to reflect the true, gem-less design.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -10,74 +11,88 @@ import Link from 'next/link';
 
 export default function Hardware() {
   return (
-    <main className="min-h-screen bg-[#FAF9F6] flex flex-col items-center pt-24 md:pt-32 px-6 md:px-12 pb-16 overflow-x-hidden">
+    <main className="min-h-screen flex flex-col items-center pt-8 pb-16 overflow-x-hidden relative">
       
-      {/* Unified Navigation - Matching the Home Page aesthetic */}
-      <nav className="w-full max-w-md mx-auto flex flex-wrap justify-center items-center gap-x-6 gap-y-4 md:gap-x-10 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-20 drop-shadow-md uppercase">
-        <Link href="/" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Return to Sanctuary</Link>
-        <Link href="/login" className="cursor-pointer hover:text-[#0b2f28] transition-colors text-center leading-[1.2] border-l border-[#B8860B]/30 pl-6 md:pl-10">
-          Member<br />Access
-        </Link>
-      </nav>
+      {/* 1. The Fixed Travertine Architecture */}
+      <div className="fixed inset-0 w-full h-[100dvh] z-0 overflow-hidden bg-[#EAE6DF]">
+        <div className="absolute inset-0 w-full h-full opacity-60 bg-[url('/amanah-sanctuary-bg.png')] bg-cover bg-center mix-blend-multiply"></div>
+      </div>
 
-      {/* Main Hardware Showcase */}
-      <div className="w-full max-w-4xl flex flex-col items-center text-center mt-4">
-        
-        <div className="text-[#B8860B] text-xs tracking-[0.2em] font-bold mb-6 uppercase">
-          In Development
-        </div>
-        
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#051410] mb-8 drop-shadow-sm">
-          Aerospace Titanium <br />
-          <span className="text-[#B8860B]">& Ceramic</span>
-        </h1>
+      {/* 2. The Interactive Sanctuary */}
+      <div className="relative z-10 w-full max-w-6xl flex flex-col items-center text-center mt-4 px-4 md:px-10">
 
-        <div className="w-16 h-[1px] bg-[#B8860B]/50 mb-16"></div>
+        {/* Top Header / Branding */}
+        <h2 className="text-xl md:text-2xl font-serif tracking-widest text-[#B8860B] mb-12 drop-shadow-sm mt-4">
+          Amanah
+        </h2>
 
-        {/* The Concept Ring Exhibition Space */}
-        {/* ACTION: Save your ring image as 'amanah-ring-concept.png' in the public folder */}
-        <div className="relative w-full max-w-2xl aspect-square md:aspect-video mb-20 flex items-center justify-center bg-[#051410]/5 rounded-3xl overflow-hidden shadow-inner">
-          <img 
-            src="/amanah-ring-concept.png" 
-            alt="Amanah Aerospace Titanium Smart Ring" 
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
-
-        {/* Core Philosophy & Materials */}
-        <div className="text-[#051410] text-base md:text-lg leading-relaxed space-y-8 max-w-2xl mx-auto font-medium">
-          <p>
-            A physical extension of your digital sanctuary. We are engineering a premium wearable device crafted from uncompromising materials.
-          </p>
+        {/* Central Exhibition Box */}
+        <div className="relative w-full max-w-5xl bg-[#FAF9F6] rounded-[2rem] md:rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row p-6 md:p-12 mt-4">
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 text-left">
-            {/* Feature 1 */}
-            <div className="space-y-4">
-              <h3 className="text-[#B8860B] text-xs tracking-[0.2em] uppercase font-bold">Zero Screens</h3>
-              <p className="text-sm leading-relaxed text-[#051410]/80">
-                Designed to remove digital distractions. Intuitive haptic feedback gently guides your daily habits without demanding your visual attention.
-              </p>
-            </div>
+          {/* Main Image Container */}
+          <div className="w-full md:w-2/3 flex flex-col justify-center items-center relative z-10 mb-8 md:mb-0">
+            <img 
+              src="/amanah-ring-concept.png" 
+              alt="Amanah Ci Dhikr Smart Rings - Titanium and Rose Gold" 
+              className="w-full max-w-2xl h-auto object-cover rounded-xl mb-12"
+            />
             
-            {/* Feature 2 */}
-            <div className="space-y-4">
-              <h3 className="text-[#B8860B] text-xs tracking-[0.2em] uppercase font-bold">Privacy First</h3>
-              <p className="text-sm leading-relaxed text-[#051410]/80">
-                Built on an absolute zero-tracking architecture. Your data remains yours. No surveillance, no cloud harvesting, pure peace of mind.
+            {/* Typography & Core Features */}
+            <div className="text-center px-4">
+              <h1 className="text-3xl md:text-4xl font-serif text-[#051410] mb-4">
+                Silent Companions for Your Journey.
+              </h1>
+              <p className="text-[#051410]/80 text-sm md:text-base max-w-lg mx-auto font-medium leading-relaxed mb-8">
+                Sculpted with the subtle permanence of brushed titanium and polished rose gold, unified by a smooth, dark ceramic core. Designed completely free of distractions, keeping Dhikr at the heart of your daily life.
               </p>
+              
+              <div className="flex flex-wrap justify-center gap-6 text-[#051410] text-xs font-bold tracking-widest uppercase">
+                <span className="flex items-center gap-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                  Discreet Haptic Focus.
+                </span>
+                <span className="flex items-center gap-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                  Biocompatible and Hard-wearing.
+                </span>
+              </div>
             </div>
           </div>
+
+          {/* Floating Member Access Box */}
+          <div className="w-full md:w-1/3 md:absolute md:bottom-12 md:right-12 bg-[#1A2E28] text-[#FAF9F6] p-8 rounded-2xl shadow-xl z-20 flex flex-col justify-center">
+            <h3 className="text-xl font-serif text-[#B8860B] mb-6">Fund Your Privacy.</h3>
+            
+            <div className="space-y-6 mb-8 text-sm">
+              <div className="flex items-start gap-3">
+                <span className="text-[#B8860B] mt-1">→</span>
+                <p><strong className="block text-[#FAF9F6]">Amanah Sanctuary Access.</strong> Looping Hifz audio, daily tafsir reflections.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#B8860B] mt-1">☖</span>
+                <p><strong className="block text-[#FAF9F6]">Founder's Hardware Tier.</strong> Early access to rings, discounts, complete data sovereignty.</p>
+              </div>
+            </div>
+
+            <Link href="/login" className="block text-center bg-[#B8860B] text-[#051410] py-3 px-6 rounded text-xs font-bold tracking-widest uppercase hover:bg-[#FAF9F6] transition-colors duration-300">
+              Explore Tiers
+            </Link>
+            
+            <p className="text-[10px] text-[#FAF9F6]/50 mt-6 tracking-wider uppercase text-center">
+              Amanah Project 2026
+            </p>
+          </div>
+
+        </div>
+        
+        {/* Simple back navigation */}
+        <div className="mt-12 text-center relative z-20">
+          <Link href="/" className="text-xs font-bold tracking-[0.2em] text-[#051410] hover:text-[#B8860B] transition-colors uppercase">
+            ← Return to Gateway
+          </Link>
         </div>
 
       </div>
-
-      {/* Official Footer */}
-      <footer className="mt-auto pt-32 pb-8 flex flex-col items-center gap-6 w-full max-w-4xl">
-        <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#051410] uppercase opacity-80">
-          Amanah Collective Ltd ©️ 2026
-        </p>
-      </footer>
-
     </main>
   );
 }
