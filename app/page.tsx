@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main 
       className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
-      style={{ backgroundImage: "url('/edited-image.png')" }}
+      style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
     >
       
       {/* The Interactive Text Sanctuary */}
