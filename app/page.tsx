@@ -1,27 +1,34 @@
 /**
- * UI: Amanah Web Storefront - Landing / Our Story
- * Description: Natural scrolling integration with expanded Menu, Quran Download, and Socials.
+ * UI: Amanah Web Storefront - Final Synchronised Gateway
+ * Description: Solved the Vercel zoom-in stretch issue. Background sits perfectly on the document top.
+ * Added TikTok, YouTube, and the Quran Download architecture.
  * Amanah Collective Ltd ©️ 2026
  */
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main 
-      className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
-      style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
-    >
-      
-      {/* The Interactive Text Sanctuary */}
-      <div className="w-full max-w-3xl flex flex-col items-center text-center mt-8 md:mt-12 px-6 md:px-10">
+    <main className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#FAF9F6]">
+      {/* Base background is Alabaster so it blends seamlessly with the archway's centre */}
+
+      {/* 1. The Scrollable Archway Layer */}
+      {/* This absolute div locks the image height to exactly one screen, stopping Vercel from stretching it, but still allows it to scroll up naturally. */}
+      <div 
+        className="absolute top-0 left-0 w-full h-[100vh] bg-top bg-cover md:bg-[length:100vw_auto] bg-no-repeat z-0"
+        style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
+      ></div>
+
+      {/* 2. The Interactive Text Sanctuary */}
+      <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 md:mt-12 px-6 md:px-10">
 
         {/* Expanded Top Navigation Menu */}
         <nav className="w-full flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-10 text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
-          <a href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</a>
-          <a href="/story" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Our Story</a>
-          <a href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</a>
-          <a href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Quran Download</a>
+          <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
+          <Link href="/story" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Our Story</Link>
+          <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
+          <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Quran Download</Link>
         </nav>
 
         {/* Brand Header */}
@@ -48,7 +55,7 @@ export default function Home() {
             In Development
           </div>
           <h3 className="text-[#0b2f28] text-2xl md:text-3xl font-bold mb-6">
-            Aerospace Titanium & Ceramic
+            Aerospace Titanium &amp; Ceramic
           </h3>
           <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
             A physical extension of your digital sanctuary. We are engineering a premium wearable device with haptic feedback, completely free of screens and digital distractions. Pure privacy. Quiet luxury.
@@ -60,14 +67,15 @@ export default function Home() {
 
       </div>
 
-      {/* Official Footer with Social Links */}
-      <footer className="mt-auto pt-24 pb-8 flex flex-col items-center gap-6">
+      {/* Official Footer with Comprehensive Social Links */}
+      <footer className="relative z-10 mt-auto pt-24 pb-8 flex flex-col items-center gap-6">
         
-        {/* Amanah Socials & Support Menu */}
-        <div className="flex space-x-6 md:space-x-8 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] uppercase">
-          <a href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Instagram</a>
-          <a href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">X (Twitter)</a>
-          <a href="/contact" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Support</a>
+        {/* Amanah Socials Ecosystem */}
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] uppercase">
+          <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Instagram</Link>
+          <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">X (Twitter)</Link>
+          <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">TikTok</Link>
+          <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">YouTube</Link>
         </div>
 
         {/* Verified Amanah Watermark */}
