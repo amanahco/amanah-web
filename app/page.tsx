@@ -1,7 +1,7 @@
 /**
- * UI: Amanah Web Storefront - The Permanent Sanctuary Architecture
- * Description: Solved the aspect ratio paradox. The background is now physically locked to the viewport.
- * This guarantees zero Vercel stretching, zero white voids, and full lattice visibility.
+ * UI: Amanah Web Storefront - The Flawless Architecture
+ * Description: Background is perfectly fixed to the viewport to permanently prevent Vercel stretching.
+ * A subtle 5% scale naturally pushes the AI watermark off the screen. No blurs, no white gaps.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -12,15 +12,14 @@ export default function Home() {
   return (
     <main className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
       
-      {/* 1. The Fixed Architecture (Bypasses all Vercel scrolling bugs) */}
-      <div className="fixed inset-0 w-full h-[100dvh] z-0 bg-[#FAF9F6]">
-        <div 
-          className="absolute inset-0 w-full h-full bg-top bg-cover bg-no-repeat"
-          style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
-        ></div>
-        
-        {/* Watermark Assassin: Permanent soft alabaster blur over the bottom right */}
-        <div className="absolute bottom-[-10%] right-[-5%] w-[50vw] h-[50vw] max-w-[400px] max-h-[400px] bg-[#FAF9F6] blur-3xl opacity-100 rounded-full pointer-events-none"></div>
+      {/* 1. The Fixed Architecture (Bypasses Vercel stretching & white gaps) */}
+      <div className="fixed inset-0 w-full h-[100dvh] z-0 overflow-hidden bg-[#FAF9F6]">
+        {/* Scaling by just 5% from the top-left naturally pushes the bottom-right watermark entirely off the screen. No blurs needed. */}
+        <img 
+          src="/amanah-sanctuary-bg.png" 
+          alt="Amanah Sanctuary" 
+          className="w-full h-full object-cover object-top scale-[1.05] origin-top-left"
+        />
       </div>
 
       {/* 2. The Interactive Text Sanctuary */}
@@ -58,7 +57,7 @@ export default function Home() {
             In Development
           </div>
           <h3 className="text-[#0b2f28] text-2xl md:text-3xl font-bold mb-6">
-            Aerospace Titanium &amp; Ceramic
+            Aerospace Titanium & Ceramic
           </h3>
           <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
             A physical extension of your digital sanctuary. We are engineering a premium wearable device with haptic feedback, completely free of screens and digital distractions. Pure privacy. Quiet luxury.
