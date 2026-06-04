@@ -1,8 +1,9 @@
 /**
- * UI: Amanah Web Storefront - Hardware Sanctuary
- * Description: Cinematic, high-end gallery layout. 
- * Built around the pure, text-free ring concept image. 
- * Typography and monetization tiers are rendered in crisp HTML for perfect scaling.
+ * UI: Amanah Web Storefront - Hardware Sanctuary (Gemini Masterpiece)
+ * Description: Cinematic gallery layout using the perfected Gemini image.
+ * Uses a CSS crop (`scale-[1.05] translate-y-1`) to completely hide the 
+ * Gemini watermark while preserving the image's stunning quality.
+ * Features the corrected "Founder's Access" luxury copy.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -30,17 +31,17 @@ export default function Hardware() {
           Silent Companions.
         </h1>
         
-        {/* THE CLEAN CONCEPT IMAGE - Framed perfectly */}
+        {/* THE CLEAN CONCEPT IMAGE - Framed perfectly with CSS crop to hide watermark */}
         <div className="w-full rounded-[2rem] overflow-hidden shadow-2xl border border-[#B8860B]/10 bg-[#EAE6DF]">
           <img 
             src="/amanah-ring-concept.png" 
             alt="Amanah Dhikr Smart Rings with Islamic Arch Etching" 
-            className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-700 ease-in-out"
+            className="w-full h-auto object-cover transform scale-[1.05] translate-y-1 hover:scale-[1.07] transition-transform duration-700 ease-in-out"
           />
         </div>
       </div>
 
-      {/* Details & Privacy Box Layout */}
+      {/* Details & Founder's Box Layout */}
       <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start text-left">
         
         {/* Left Column: Product Details */}
@@ -78,21 +79,21 @@ export default function Hardware() {
         <div className="bg-[#051410] text-[#FAF9F6] p-10 md:p-14 rounded-[2rem] shadow-2xl relative overflow-hidden border border-[#B8860B]/20">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#B8860B]/10 rounded-bl-[100px] blur-2xl"></div>
           
-          <h3 className="text-2xl md:text-3xl font-serif text-[#B8860B] mb-10 relative z-10">Fund Your Privacy.</h3>
+          <h3 className="text-2xl md:text-3xl font-serif text-[#B8860B] mb-10 relative z-10">Founder's Access.</h3>
           
           <div className="space-y-8 mb-12 text-sm leading-relaxed relative z-10">
             <div className="flex items-start gap-4">
               <span className="text-[#B8860B] font-bold text-lg mt-[-3px]">→</span>
-              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Sanctuary Access.</strong> Looping Hifz audio, daily tafsir reflections, and a completely ad-free environment.</p>
+              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Sanctuary Membership.</strong> Looping Hifz audio, daily tafsir reflections, and a completely ad-free environment.</p>
             </div>
             <div className="flex items-start gap-4">
               <span className="text-[#B8860B] font-bold text-lg mt-[-3px]">☖</span>
-              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Founder's Hardware Tier.</strong> Early access to the Dhikr rings, priority discounts, and complete data sovereignty.</p>
+              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Hardware Allocation.</strong> Early access to the Dhikr rings, priority discounts, and absolute data sovereignty.</p>
             </div>
           </div>
 
           <Link href="/login" className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10">
-            Secure Your Access
+            Secure Your Allocation
           </Link>
         </div>
       </div>
