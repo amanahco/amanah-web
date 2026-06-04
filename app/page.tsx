@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Flawless Architecture
  * Description: Background is perfectly fixed to the viewport to permanently prevent Vercel stretching.
- * Navigation menu refined: "Quran Download" stacked vertically to preserve symmetrical lattice spacing.
+ * Navigation menu width tightened to perfectly center all items and clear the archway curve.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -25,8 +25,8 @@ export default function Home() {
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
-        {/* Expanded Top Navigation Menu (Vertically Centered with Stacked Quran Link) */}
-        <nav className="w-full max-w-lg mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-4 md:gap-x-6 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
+        {/* Expanded Top Navigation Menu (Tightened container to clear the left arch edge) */}
+        <nav className="w-full max-w-md mx-auto flex flex-wrap justify-center items-center gap-x-3 gap-y-4 md:gap-x-5 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
           <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
           <Link href="/story" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Our Story</Link>
           <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
