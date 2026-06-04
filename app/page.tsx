@@ -1,7 +1,6 @@
 /**
  * UI: Amanah Web Storefront - Final Synchronised Gateway
- * Description: Solved the Vercel zoom-in stretch issue. Background sits perfectly on the document top.
- * Added TikTok, YouTube, and the Quran Download architecture.
+ * Description: Restored natural unified scrolling physics. Background attached to main container.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -10,17 +9,12 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#FAF9F6]">
-      {/* Base background is Alabaster so it blends seamlessly with the archway's centre */}
+    <main 
+      className="min-h-screen flex flex-col items-center pt-24 md:pt-36 px-4 pb-12 overflow-x-hidden bg-[#051410] bg-top bg-cover bg-no-repeat"
+      style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
+    >
 
-      {/* 1. The Scrollable Archway Layer */}
-      {/* This absolute div locks the image height to exactly one screen, stopping Vercel from stretching it, but still allows it to scroll up naturally. */}
-      <div 
-        className="absolute top-0 left-0 w-full h-[100vh] bg-top bg-cover md:bg-[length:100vw_auto] bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/amanah-sanctuary-bg.png')" }}
-      ></div>
-
-      {/* 2. The Interactive Text Sanctuary */}
+      {/* The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 md:mt-12 px-6 md:px-10">
 
         {/* Expanded Top Navigation Menu */}
