@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Quran Portal
  * Description: A universal, beginner-friendly sanctuary for reading and downloading the Quran.
- * Features Indo-Pak script aesthetics, pure transliteration, and a zero-tracking download.
+ * Features the complete Surah Al-Fatihah and a functional zero-tracking download link.
  * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology.
  * Amanah Collective Ltd ©️ 2026
  */
@@ -31,7 +31,7 @@ export default function QuranPortal() {
         </p>
       </div>
 
-      {/* The Reading Gateway - Surah Al-Fatihah Example */}
+      {/* The Reading Gateway - Full Surah Al-Fatihah */}
       <div className="w-full max-w-3xl bg-white border border-[#B8860B]/20 rounded-[2rem] shadow-xl p-10 md:p-16 mb-20 relative overflow-hidden">
         {/* Subtle decorative background element */}
         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#FAF9F6] via-[#B8860B]/40 to-[#FAF9F6]"></div>
@@ -44,7 +44,6 @@ export default function QuranPortal() {
         <div className="flex flex-col gap-12 text-center">
           {/* Verse 1 */}
           <div className="flex flex-col gap-4">
-             {/* Note: This assumes a standard font, but you will link your Indo-Pak web font here later */}
              <p className="text-3xl md:text-4xl font-serif text-[#051410] leading-relaxed" dir="rtl">
                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
              </p>
@@ -70,6 +69,81 @@ export default function QuranPortal() {
                [All] praise is [due] to Allah, Lord of the worlds.
              </p>
           </div>
+
+          <div className="w-8 h-[1px] bg-[#B8860B]/30 mx-auto"></div>
+
+          {/* Verse 3 */}
+          <div className="flex flex-col gap-4">
+             <p className="text-3xl md:text-4xl font-serif text-[#051410] leading-relaxed" dir="rtl">
+               الرَّحْمَٰنِ الرَّحِيمِ
+             </p>
+             <p className="text-[#051410]/80 font-serif italic text-lg md:text-xl">
+               Ar-rahmanir rahim
+             </p>
+             <p className="text-sm md:text-base text-[#051410]/60 uppercase tracking-wide text-[10px] font-bold">
+               The Entirely Merciful, the Especially Merciful.
+             </p>
+          </div>
+
+          <div className="w-8 h-[1px] bg-[#B8860B]/30 mx-auto"></div>
+
+          {/* Verse 4 */}
+          <div className="flex flex-col gap-4">
+             <p className="text-3xl md:text-4xl font-serif text-[#051410] leading-relaxed" dir="rtl">
+               مَالِكِ يَوْمِ الدِّينِ
+             </p>
+             <p className="text-[#051410]/80 font-serif italic text-lg md:text-xl">
+               Maliki yawmid din
+             </p>
+             <p className="text-sm md:text-base text-[#051410]/60 uppercase tracking-wide text-[10px] font-bold">
+               Sovereign of the Day of Recompense.
+             </p>
+          </div>
+
+          <div className="w-8 h-[1px] bg-[#B8860B]/30 mx-auto"></div>
+
+          {/* Verse 5 */}
+          <div className="flex flex-col gap-4">
+             <p className="text-3xl md:text-4xl font-serif text-[#051410] leading-relaxed" dir="rtl">
+               إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ
+             </p>
+             <p className="text-[#051410]/80 font-serif italic text-lg md:text-xl">
+               Iyyaka na'budu wa iyyaka nasta'in
+             </p>
+             <p className="text-sm md:text-base text-[#051410]/60 uppercase tracking-wide text-[10px] font-bold">
+               It is You we worship and You we ask for help.
+             </p>
+          </div>
+
+          <div className="w-8 h-[1px] bg-[#B8860B]/30 mx-auto"></div>
+
+          {/* Verse 6 */}
+          <div className="flex flex-col gap-4">
+             <p className="text-3xl md:text-4xl font-serif text-[#051410] leading-relaxed" dir="rtl">
+               اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ
+             </p>
+             <p className="text-[#051410]/80 font-serif italic text-lg md:text-xl">
+               Ihdinas siratal mustaqim
+             </p>
+             <p className="text-sm md:text-base text-[#051410]/60 uppercase tracking-wide text-[10px] font-bold">
+               Guide us to the straight path.
+             </p>
+          </div>
+
+          <div className="w-8 h-[1px] bg-[#B8860B]/30 mx-auto"></div>
+
+          {/* Verse 7 */}
+          <div className="flex flex-col gap-4">
+             <p className="text-3xl md:text-4xl font-serif text-[#051410] leading-relaxed" dir="rtl">
+               صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+             </p>
+             <p className="text-[#051410]/80 font-serif italic text-lg md:text-xl">
+               Siratal ladhina an'amta 'alayhim ghayril maghdubi 'alayhim walad dallin
+             </p>
+             <p className="text-sm md:text-base text-[#051410]/60 uppercase tracking-wide text-[10px] font-bold">
+               The path of those upon whom You have bestowed favour, not of those who have evoked [Your] anger or of those who are astray.
+             </p>
+          </div>
         </div>
       </div>
 
@@ -85,7 +159,12 @@ export default function QuranPortal() {
          </div>
 
          <div className="relative z-10 flex justify-center md:justify-end">
-           <a href="#" className="inline-flex items-center justify-center gap-3 bg-[#B8860B] text-[#051410] py-5 px-8 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-all duration-300 shadow-lg hover:shadow-xl w-full md:w-auto text-center">
+           {/* The download attribute forces the browser to download the file instead of opening it */}
+           <a 
+             href="/Amanah-Quran-Indo-Pak.pdf" 
+             download="Amanah-Quran-Indo-Pak.pdf"
+             className="inline-flex items-center justify-center gap-3 bg-[#B8860B] text-[#051410] py-5 px-8 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-all duration-300 shadow-lg hover:shadow-xl w-full md:w-auto text-center"
+           >
              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
              Download Full Quran
            </a>
