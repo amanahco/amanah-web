@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Quran Portal
  * Description: A universal, beginner-friendly sanctuary for reading and downloading the Quran.
- * External download link implemented to bypass repository size limits while preserving the user gift.
+ * External download link implemented via Vercel Blob storage.
  * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology.
  * Amanah Collective Ltd ©️ 2026
  */
@@ -159,9 +159,9 @@ export default function QuranPortal() {
          </div>
 
          <div className="relative z-10 flex justify-center md:justify-end">
-           {/* Link updated to pull directly from the secure archive */}
+           {/* Link updated to pull directly from your secure Vercel Blob store */}
            <a 
-             href="https://archive.org/download/QuranCollection_201602/15%20Lines%20Al%20Quran%20English%20Translation%20word%20to%20word%20with%20SW.pdf" 
+             href="https://wcelhqj2pvhsbqm7.public.blob.vercel-storage.com/Amanah-Quran-Indo-Pak.pdf" 
              target="_blank"
              rel="noopener noreferrer"
              className="inline-flex items-center justify-center gap-3 bg-[#B8860B] text-[#051410] py-5 px-8 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-all duration-300 shadow-lg hover:shadow-xl w-full md:w-auto text-center"
