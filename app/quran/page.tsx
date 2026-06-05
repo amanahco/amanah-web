@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Quran Portal
  * Description: A universal, beginner-friendly sanctuary for reading and downloading the Quran.
- * Features the complete Surah Al-Fatihah and a functional zero-tracking download link.
+ * External download link implemented to bypass repository size limits while preserving the user gift.
  * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology.
  * Amanah Collective Ltd ©️ 2026
  */
@@ -159,10 +159,11 @@ export default function QuranPortal() {
          </div>
 
          <div className="relative z-10 flex justify-center md:justify-end">
-           {/* The download attribute forces the browser to download the file instead of opening it */}
+           {/* Link updated to pull directly from the secure archive */}
            <a 
-             href="/Amanah-Quran-Indo-Pak.pdf" 
-             download="Amanah-Quran-Indo-Pak.pdf"
+             href="https://archive.org/download/QuranCollection_201602/15%20Lines%20Al%20Quran%20English%20Translation%20word%20to%20word%20with%20SW.pdf" 
+             target="_blank"
+             rel="noopener noreferrer"
              className="inline-flex items-center justify-center gap-3 bg-[#B8860B] text-[#051410] py-5 px-8 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-all duration-300 shadow-lg hover:shadow-xl w-full md:w-auto text-center"
            >
              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
