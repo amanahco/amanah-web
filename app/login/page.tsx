@@ -1,6 +1,6 @@
 /**
- * UI: Amanah Web Storefront - Member Access / Login
- * Description: The secure, zero-tracking gateway to the digital sanctuary.
+ * UI: Amanah Web Storefront - Member Access (Magic Link & Contribution)
+ * Description: The secure, passwordless gateway to the digital sanctuary.
  * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology. Privacy-first architecture.
  * Amanah Collective Ltd ©️ 2026
  */
@@ -29,7 +29,7 @@ export default function MemberAccess() {
         {/* Card Header */}
         <div className="p-10 pb-8 text-center border-b border-[#FAF9F6]/10">
           <h1 className="text-3xl font-serif text-[#B8860B] mb-3">Member Access.</h1>
-          <p className="text-[#FAF9F6]/70 text-sm tracking-wide">Enter the Digital Sanctuary.</p>
+          <p className="text-[#FAF9F6]/70 text-sm tracking-wide">Enter via secure, passwordless authentication.</p>
         </div>
 
         {/* Form Section */}
@@ -47,25 +47,11 @@ export default function MemberAccess() {
               />
             </div>
 
-            <div className="flex flex-col gap-2">
-              <div className="flex justify-between items-center">
-                <label htmlFor="password" className="text-[#FAF9F6]/60 text-[10px] font-bold tracking-[0.2em] uppercase">Security Key</label>
-                <a href="#" className="text-[#B8860B] text-[10px] hover:text-[#FAF9F6] transition-colors duration-300">Reset Access?</a>
-              </div>
-              <input 
-                type="password" 
-                id="password" 
-                placeholder="••••••••" 
-                className="w-full bg-[#FAF9F6]/5 border border-[#FAF9F6]/10 text-[#FAF9F6] px-4 py-3 rounded-lg focus:outline-none focus:border-[#B8860B] transition-colors duration-300 placeholder-[#FAF9F6]/20"
-                required
-              />
-            </div>
-
             <button 
               type="submit" 
-              className="mt-4 w-full bg-[#B8860B] text-[#051410] py-4 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 shadow-lg"
+              className="mt-2 w-full bg-[#B8860B] text-[#051410] py-4 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 shadow-lg"
             >
-              Secure Login
+              Send Secure Link
             </button>
             
           </form>
@@ -76,17 +62,34 @@ export default function MemberAccess() {
                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
              </span>
              <p className="text-[#FAF9F6]/50 text-[10px] tracking-wide max-w-[200px] leading-relaxed">
-               Zero surveillance. Your focus remains entirely yours.
+               A single-use link will be dispatched. Zero surveillance.
              </p>
           </div>
         </div>
       </div>
 
-      {/* Registration Call to Action */}
-      <div className="mt-10 text-center relative z-10">
+      {/* Registration & Contribution Call to Action */}
+      <div className="mt-12 w-full max-w-md flex flex-col items-center text-center gap-6 relative z-10">
+        
+        {/* Hardware Allocation Route */}
         <p className="text-[#051410]/70 text-sm">
-          Not yet a member? <Link href="/hardware" className="text-[#B8860B] font-bold hover:text-[#051410] transition-colors duration-300 border-b border-[#B8860B]/30 pb-1">Secure Your Allocation</Link>
+          Not yet a member? <br className="md:hidden"/> 
+          <Link href="/hardware" className="text-[#B8860B] font-bold hover:text-[#051410] transition-colors duration-300 border-b border-[#B8860B]/30 pb-1 ml-1">Secure Your Hardware Allocation</Link>
         </p>
+        
+        {/* Visual Divider */}
+        <div className="flex items-center gap-4 w-3/4 opacity-30">
+          <div className="h-[1px] flex-grow bg-[#051410]"></div>
+          <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Or</span>
+          <div className="h-[1px] flex-grow bg-[#051410]"></div>
+        </div>
+
+        {/* Support the Mission Route */}
+        <p className="text-[#051410]/70 text-sm">
+          Wish to support the continuous charity without hardware? <br className="md:hidden"/>
+          <Link href="#" className="text-[#B8860B] font-bold hover:text-[#051410] transition-colors duration-300 border-b border-[#B8860B]/30 pb-1 ml-1 mt-2 inline-block">Make a Direct Contribution</Link>
+        </p>
+
       </div>
 
       {/* Official Footer */}
