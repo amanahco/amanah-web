@@ -1,7 +1,8 @@
 /**
  * UI: Amanah Web Storefront - Our Story
- * Description: The genesis and journey of the brand.
- * Focuses on the catalyst for creating Amanah without exposing private founder details.
+ * Description: The foundation and journey of the brand.
+ * Strictly adheres to UK English spelling and Islamic terminology.
+ * Expanded application feature showcase.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -21,7 +22,7 @@ export default function OurStory() {
 
       {/* Hero Section */}
       <div className="w-full max-w-4xl flex flex-col items-center text-center mb-24 mt-4">
-        <h2 className="text-[#B8860B] text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase mb-6">The Genesis</h2>
+        <h2 className="text-[#B8860B] text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase mb-6">Our Foundation</h2>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-[#051410] mb-10">
           We wanted a sanctuary. <br className="hidden md:block" />
           <span className="italic text-[#051410]/80">So we built one.</span>
@@ -35,10 +36,10 @@ export default function OurStory() {
         <section>
           <h3 className="text-xl md:text-2xl font-serif text-[#051410] mb-6">The Catalyst</h3>
           <p className="mb-6">
-            Amanah did not start in a boardroom. It started in a family home, born from a simple but heavy realization: the technology we relied on was quietly eroding our peace. Every app, every notification, and every "smart" device was designed to extract our attention and monetize our data. 
+            Amanah did not start in a boardroom. It started in a family home, born from a simple but heavy realisation: the technology we relied on was quietly eroding our peace. Every app, every notification, and every "smart" device was designed to extract our attention and monetise our data. 
           </p>
           <p>
-            As parents looking at the next generation, we saw a future where quiet reflection and uninterrupted connection with our Creator were becoming luxuries. We realized that if we wanted a digital ecosystem that respected our modesty, protected our privacy, and elevated our faith, we could no longer wait for someone else to build it.
+            As parents looking at the next generation, we saw a future where quiet reflection and uninterrupted connection with our Creator were becoming luxuries. We realised that if we wanted a digital ecosystem that respected our modesty, protected our privacy, and elevated our faith, we could no longer wait for someone else to build it.
           </p>
         </section>
 
@@ -54,8 +55,11 @@ export default function OurStory() {
           <p className="mb-6">
             The journey began with a single rule: zero surveillance. We set out to engineer the Amanah Dhikr Ring—a piece of hardware milled from aerospace titanium and premium ceramics, completely devoid of screens and tracking mechanisms. It was designed to do one thing flawlessly: act as a discrete, haptic companion for Tasbih.
           </p>
+          <p className="mb-6">
+            From there, the vision expanded into the Amanah Digital Sanctuary. We did not just build an application; we built a fortress for your faith. The platform is engineered to seamlessly integrate into your daily life, offering pure, looping Hifz audio, profound daily Tafsir reflections, and beautifully curated Islamic resources. 
+          </p>
           <p>
-            From there, the vision expanded. The Amanah web sanctuary was constructed to host pure, looping Hifz audio and daily reflections without a single advertisement or algorithm interrupting the experience. Every pixel and every line of code was crafted to adhere to uncompromising modesty and quiet luxury.
+            Every feature—from the strictly ad-free environment to the absolute zero-tracking data policy—is designed to elevate your spiritual journey rather than exploit it. Every pixel and every line of code was crafted to adhere to uncompromising modesty and quiet luxury, providing you with the ultimate peace of mind.
           </p>
         </section>
 
