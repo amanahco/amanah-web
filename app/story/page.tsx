@@ -1,8 +1,7 @@
 /**
  * UI: Amanah Web Storefront - Our Story
  * Description: The foundation and journey of the brand.
- * Strictly adheres to UK English spelling and Islamic terminology.
- * Expanded application feature showcase.
+ * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology. Natural punctuation.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -53,13 +52,13 @@ export default function OurStory() {
         <section>
           <h3 className="text-xl md:text-2xl font-serif text-[#051410] mb-6">The Architecture of Focus</h3>
           <p className="mb-6">
-            The journey began with a single rule: zero surveillance. We set out to engineer the Amanah Dhikr Ring—a piece of hardware milled from aerospace titanium and premium ceramics, completely devoid of screens and tracking mechanisms. It was designed to do one thing flawlessly: act as a discrete, haptic companion for Tasbih.
+            The journey began with a single rule: zero surveillance. We set out to engineer the Amanah Dhikr Ring. It is a piece of hardware milled from aerospace titanium and premium ceramics, completely devoid of screens and tracking mechanisms. It was designed to do one thing flawlessly: act as a discrete, haptic companion for Tasbih.
           </p>
           <p className="mb-6">
             From there, the vision expanded into the Amanah Digital Sanctuary. We did not just build an application; we built a fortress for your faith. The platform is engineered to seamlessly integrate into your daily life, offering pure, looping Hifz audio, profound daily Tafsir reflections, and beautifully curated Islamic resources. 
           </p>
           <p>
-            Every feature—from the strictly ad-free environment to the absolute zero-tracking data policy—is designed to elevate your spiritual journey rather than exploit it. Every pixel and every line of code was crafted to adhere to uncompromising modesty and quiet luxury, providing you with the ultimate peace of mind.
+            Every feature, from the strictly ad-free environment to the absolute zero-tracking data policy, is designed to elevate your spiritual journey rather than exploit it. Every pixel and every line of code was crafted to adhere to uncompromising modesty and quiet luxury, providing you with the ultimate peace of mind.
           </p>
         </section>
 

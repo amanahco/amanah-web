@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Manifesto & Our Story
  * Description: The philosophical foundation of the brand.
- * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology.
+ * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology. Natural punctuation.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -37,7 +37,7 @@ export default function Manifesto() {
             The modern world demands our constant attention, fracturing our focus and turning our spirituality into a part-time endeavour. We built Amanah to reject this. We believe that true faith is not a destination we occasionally visit, but the sanctuary in which we reside. 
           </p>
           <p>
-            Our legacy is not defined by borders or geography, but by an unyielding commitment to the preservation of faith across generations. Amanah Collective Ltd was born from a father’s desire to protect that focus for his family—a digital and physical shield against the noise of the surveillance economy.
+            Our legacy is not defined by borders or geography, but by an unyielding commitment to the preservation of faith across generations. Amanah Collective Ltd was born from a father’s desire to protect that focus for his family. It stands as a digital and physical shield against the noise of the surveillance economy.
           </p>
         </section>
 
@@ -45,7 +45,7 @@ export default function Manifesto() {
            <div className="absolute top-0 right-0 w-32 h-32 bg-[#B8860B]/10 rounded-bl-[100px] blur-2xl"></div>
            <h3 className="text-2xl font-serif text-[#B8860B] mb-6 relative z-10">One Ummah. One Body.</h3>
            <p className="text-[#FAF9F6]/90 relative z-10 text-sm md:text-base leading-loose">
-             In his Farewell Sermon, our beloved Prophet Muhammad (ﷺ) dismantled the illusions of superiority. No race, no geography, and no origin elevates a person above another—only Taqwa (piety) and good action. We are one body, connected by our faith in the Almighty. Every line of code we write and every piece of hardware we mill is dedicated to uniting and empowering this Ummah.
+             In his Farewell Sermon, our beloved Prophet Muhammad (ﷺ) dismantled the illusions of superiority. No race, no geography, and no origin elevates a person above another. Only Taqwa (piety) and good action hold true value. We are one body, connected by our faith in the Almighty. Every line of code we write and every piece of hardware we mill is dedicated to uniting and empowering this Ummah.
            </p>
         </section>
 
