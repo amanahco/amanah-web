@@ -17,7 +17,7 @@ export default function Hardware() {
       {/* Elegant Top Navigation */}
       <nav className="w-full max-w-6xl flex justify-between items-center mb-16 uppercase text-[10px] md:text-xs font-bold tracking-[0.2em] border-b border-[#051410]/5 pb-6">
          <Link href="/" className="text-[#B8860B] tracking-[0.3em] hover:text-[#051410] transition-colors duration-300">
-           Amanah
+           Return to Sanctuary
          </Link>
          <div className="flex gap-6 md:gap-10">
            <Link href="/" className="hover:text-[#B8860B] transition-colors duration-300">Sanctuary</Link>
