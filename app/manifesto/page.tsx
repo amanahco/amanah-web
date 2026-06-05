@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront - The Manifesto & Our Story
  * Description: The philosophical foundation of the brand.
- * All family names have been strictly removed to ensure absolute founder privacy.
+ * Removed public declaration of "Sadaqah Jariyah" to maintain the privacy and sincerity of the founders' intentions.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -55,7 +55,7 @@ export default function Manifesto() {
             We are investing in the youth, equipping them with tools that facilitate connection with the Creator without extracting their data in return. Our ecosystem is built entirely on zero-tracking, uncompromising modesty, and quiet luxury.
           </p>
           <p>
-            This is more than a technology company. It is a Sadaqah Jariyah—a continuous charity dedicated to ensuring the future of our youth is grounded in firm belief, knowledge, and victorious leadership. The future will be good, Insha'Allah.
+            This is more than a technology company; it is a commitment to the future. We are dedicated to ensuring the next generation is grounded in firm belief, knowledge, and victorious leadership. The future will be good, Insha'Allah.
           </p>
         </section>
 
