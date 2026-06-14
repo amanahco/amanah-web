@@ -1,16 +1,54 @@
+"use client";
+
 /**
  * UI: Amanah Web Storefront - Hardware Sanctuary (Gemini Masterpiece)
  * Description: Cinematic gallery layout using the perfected Gemini image.
  * Uses an aggressive CSS crop (`scale-[1.15] translate-y-4 translate-x-4`) 
  * to completely eradicate the stubborn Gemini watermark.
  * Features the corrected "Founder's Access" luxury copy.
+ * Integrated with secure Stripe checkout route.
  * Amanah Collective Ltd ©️ 2026
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 export default function Hardware() {
+  // State to handle the loading spinner when they click
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  // The function that securely triggers Stripe
+  const handleCheckout = async () => {
+    setIsProcessing(true);
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userEmail: 'guest@amanahco.co', // We can connect this to actual user auth later
+          ringSize: 'Standard',
+          edition: 'Universal Titanium', 
+          isFoundingMember: false,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        // Instantly redirects the supporter to your secure Stripe hosted checkout
+        window.location.href = data.url; 
+      } else {
+        console.error('Checkout failed:', data.error);
+      }
+    } catch (error) {
+      console.error('Frontend Error:', error);
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
   return (
     <main className="min-h-screen bg-[#FAF9F6] flex flex-col items-center pt-12 pb-24 px-6 md:px-12 font-sans text-[#051410] overflow-x-hidden">
       
@@ -92,9 +130,14 @@ export default function Hardware() {
             </div>
           </div>
 
-          <Link href="/login" className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10">
-            Secure Your Allocation
-          </Link>
+          {/* THE UPDATED SECURE CHECKOUT BUTTON */}
+          <button 
+            onClick={handleCheckout}
+            disabled={isProcessing}
+            className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isProcessing ? 'Securing Sanctuary...' : 'Secure Your Allocation - £139.00'}
+          </button>
         </div>
       </div>
 
