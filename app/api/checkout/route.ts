@@ -1,11 +1,11 @@
 // Tahir Archive: Amanah Co Stripe Checkout Route
 // Path: app/api/checkout/route.ts
-// Description: Secure backend route to generate Stripe checkout sessions for the Silent Companion preorder.
+// Description: Secure, dynamic backend route for Silent Companion preorder.
 
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
-// Initialize Stripe with your secret key (stored safely in your .env.local file)
+// Initialize Stripe with your secure test key
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   // @ts-ignore - Bypassing strict type checking to prevent Stripe server rejection
   apiVersion: '2023-10-16',
@@ -16,9 +16,15 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { userEmail, ringSize, edition, isFoundingMember } = body;
 
-    // Define the preorder price ID (you will generate this inside your Stripe Dashboard)
-    // We can swap this dynamically if they are a Founding Member getting early access
     const priceId = process.env.STRIPE_PREORDER_PRICE_ID; 
+
+    if (!priceId) {
+        throw new Error("Stripe Price ID is missing. The server cannot find it.");
+    }
+
+    // DYNAMIC ORIGIN: Foolproof way to get the exact URL (works locally and on live Vercel)
+    // This completely bypasses the need for NEXT_PUBLIC_BASE_URL
+    const origin = request.headers.get('origin') || 'https://www.amanahco.co';
 
     // Create the secure Checkout Session
     const session = await stripe.checkout.sessions.create({
@@ -31,25 +37,27 @@ export async function POST(request: Request) {
         },
       ],
       mode: 'payment',
-      // Pass the ring details to Stripe so we know exactly what to manufacture
       payment_intent_data: {
         metadata: {
           ringSize: ringSize,
-          edition: edition, // 'Titanium' or 'Rose Gold'
+          edition: edition,
           isFoundingMember: isFoundingMember ? 'true' : 'false',
         },
       },
-      // Redirect users back to your sanctuary upon success or cancellation
-      success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/hardware/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/hardware`,
+      // Safely using the dynamic origin
+      success_url: `${origin}/hardware/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/hardware`,
     });
 
     return NextResponse.json({ url: session.url });
 
   } catch (error: any) {
-    console.error('Stripe Checkout Error:', error);
+    // This prints the EXACT reason to your terminal for our records
+    console.error('Stripe Checkout Error Details:', error);
+    
+    // This sends the exact error string directly to your browser screen
     return NextResponse.json(
-      { error: 'Failed to initiate secure checkout for the sanctuary.' },
+      { error: error.message || 'Unknown Stripe connection error occurred.' },
       { status: 500 }
     );
   }
