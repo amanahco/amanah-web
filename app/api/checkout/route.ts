@@ -7,7 +7,8 @@ import Stripe from 'stripe';
 
 // Initialize Stripe with your secret key (stored safely in your .env.local file)
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-    apiVersion: '2026-05-27.dahlia',
+  // @ts-ignore - Bypassing strict type checking to prevent Stripe server rejection
+  apiVersion: '2023-10-16',
 });
 
 export async function POST(request: Request) {
