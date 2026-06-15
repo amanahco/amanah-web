@@ -129,7 +129,18 @@ export default function Hardware() {
               <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Hardware Allocation.</strong> Early access to the Dhikr rings, priority discounts, and absolute data sovereignty.</p>
             </div>
           </div>
-
+          <div className="mb-8 p-6 bg-stone-50 rounded-2xl border border-stone-200 text-center shadow-sm">
+  <h3 className="text-xs uppercase tracking-widest text-stone-500 font-semibold mb-2">
+    Phase One Manufacturing
+  </h3>
+  <div className="flex items-baseline justify-center gap-2">
+    <span className="text-4xl font-bold text-stone-900">0</span>
+    <span className="text-xl text-stone-400">/ 540</span>
+  </div>
+  <p className="text-sm text-stone-600 mt-3">
+    Allocations secured to fund the aerospace titanium molds.
+  </p>
+</div>
           {/* THE UPDATED SECURE CHECKOUT BUTTON */}
           <button 
             onClick={handleCheckout}
