@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-<main className="h-full relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
+    <main className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
       
       {/* 1. The Fixed Architecture */}
       <div className="fixed inset-0 w-full h-[100dvh] z-0 overflow-hidden bg-[#FAF9F6]">
@@ -70,6 +70,23 @@ export default function Home() {
         </div>
 
       </div>
+
+      {/* Official Footer with Comprehensive Social Links Restored for Landing Page Layering */}
+      <footer className="relative z-10 mt-auto pt-24 pb-8 flex flex-col items-center gap-6 w-full">
+        
+        {/* Amanah Socials Ecosystem */}
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
+          <a href="https://instagram.com/amanah_collective" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">Instagram</a>
+          <a href="https://twitter.com/amanah_c0" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">X (Twitter)</a>
+          <a href="https://tiktok.com/@amanah.co99" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">TikTok</a>
+          <a href="https://youtube.com/@AmanahCollective" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">YouTube</a>
+        </div>
+
+        {/* Verified Amanah Watermark */}
+        <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#0b2f28] uppercase drop-shadow-sm opacity-80">
+          Amanah Collective Ltd ©️ 2026
+        </p>
+      </footer>
 
     </main>
   );
