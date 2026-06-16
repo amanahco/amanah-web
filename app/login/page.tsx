@@ -92,12 +92,7 @@ export default function MemberAccess() {
 
       </div>
 
-      {/* Official Footer */}
-      <footer className="absolute bottom-10 text-center w-full max-w-6xl">
-        <p className="text-[10px] font-bold tracking-[0.3em] text-[#051410]/40 uppercase">
-          Amanah Collective Ltd ©️ 2026
-        </p>
-      </footer>
+
       
     </main>
   );

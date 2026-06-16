@@ -71,11 +71,11 @@ export default function Home() {
 
       </div>
 
-      {/* Official Footer with Comprehensive Social Links */}
-      <footer className="relative z-10 mt-auto pt-24 pb-8 flex flex-col items-center gap-6 w-full">
+{/* Official Footer with Comprehensive Social Links */}
+<footer className="relative z-10 mt-auto pt-24 pb-8 flex flex-col items-center gap-6 w-full">
         
         {/* Amanah Socials Ecosystem */}
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] uppercase">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
           <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Instagram</Link>
           <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">X (Twitter)</Link>
           <Link href="#" className="cursor-pointer hover:text-[#0b2f28] transition-colors">TikTok</Link>
@@ -86,7 +86,7 @@ export default function Home() {
         <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#0b2f28] uppercase drop-shadow-sm opacity-80">
           Amanah Collective Ltd ©️ 2026
         </p>
-      </footer>
+    </footer>
 
     </main>
   );
