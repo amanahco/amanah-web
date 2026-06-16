@@ -50,7 +50,54 @@ export default function Dashboard() {
            <p className="text-[10px] uppercase tracking-[0.2em] text-[#051410]/50 font-bold">Knowledge Hub</p>
         </div>
 
-        {/* Hifz Audio / Tasbih Module */}
+{/* Section 3: Sanctuary Audio */}
+<section className="bg-[#051410] rounded-3xl p-8 text-center text-stone-200 border border-[#B8860B]/20 relative overflow-hidden">
+          {/* Subtle Arch Background */}
+          <div className="absolute inset-0 opacity-5 pointer-events-none flex justify-center items-center">
+             <div className="w-64 h-80 border border-stone-200 rounded-t-full"></div>
+          </div>
+          
+          <div className="relative z-10">
+            <h2 className="text-xl font-serif text-[#B8860B] mb-2 tracking-wide">Continuous Hifz</h2>
+            <p className="text-xs uppercase tracking-[0.2em] opacity-60 mb-8">Pure Loop • Zero Tracking</p>
+            
+            {/* The Minimal Player Interface */}
+            <div className="flex flex-col items-center gap-6 max-w-sm mx-auto">
+              
+              {/* Now Playing Info */}
+              <div className="text-center mb-4">
+                <h3 className="text-lg font-semibold tracking-wide">Surah Al-Mulk</h3>
+                <p className="text-sm opacity-50 mt-1">Mishary Rashid Alafasy</p>
+              </div>
+
+              {/* Loop Controls */}
+              <div className="flex items-center justify-center gap-8 w-full bg-stone-900/50 p-4 rounded-full border border-stone-800">
+                <button className="text-stone-400 hover:text-[#B8860B] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                </button>
+                
+                <button className="bg-[#B8860B] text-[#051410] w-12 h-12 rounded-full flex items-center justify-center hover:scale-105 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+
+                <button className="text-stone-400 hover:text-[#B8860B] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+                </button>
+              </div>
+
+              {/* Minimal Progress Bar */}
+              <div className="w-full mt-2">
+                <div className="h-1 bg-stone-800 rounded-full overflow-hidden">
+                  <div className="h-full bg-[#B8860B] w-1/3"></div>
+                </div>
+                <div className="flex justify-between text-[10px] text-stone-500 mt-2 font-mono">
+                  <span>02:45</span>
+                  <span>08:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <div className="border border-[#051410]/10 rounded-[2rem] p-10 bg-[#EAE6DF] shadow-sm flex flex-col justify-center items-center text-center min-h-[300px] hover:border-[#B8860B]/30 transition-colors duration-300 cursor-pointer">
            <span className="text-[#051410] mb-4">
              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
