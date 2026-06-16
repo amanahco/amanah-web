@@ -24,9 +24,11 @@ export default function RootLayout({
         <footer className="w-full border-t border-[#051410]/10 pt-12 pb-16 flex flex-col items-center bg-[#FAF9F6]">
           
           {/* Organic Growth Touchpoints */}
-          <div className="flex gap-10 mb-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
-          <a href="https://tiktok.com/@amanah.co99" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">TikTok</a>
-            <a href="https://youtube.com/@amanahco" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">YouTube</a>
+          <div className="flex flex-wrap justify-center gap-6 mb-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
+            <a href="https://instagram.com/amanah_collective" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">Instagram</a>
+            <a href="https://twitter.com/amanah_c0" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">X (Twitter)</a>
+            <a href="https://tiktok.com/@amanah.co99" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">TikTok</a>
+            <a href="https://youtube.com/@AmanahCollective" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">YouTube</a>
           </div>
           
           {/* The Legal Shield Placeholders */}
