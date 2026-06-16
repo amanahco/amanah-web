@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
+<main className="h-full relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
       
       {/* 1. The Fixed Architecture */}
       <div className="fixed inset-0 w-full h-[100dvh] z-0 overflow-hidden bg-[#FAF9F6]">
