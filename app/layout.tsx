@@ -25,7 +25,7 @@ export default function RootLayout({
           
           {/* Organic Growth Touchpoints */}
           <div className="flex gap-10 mb-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
-            <a href="https://tiktok.com/@amanahco" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">TikTok</a>
+          <a href="https://tiktok.com/@amanah.co99" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">TikTok</a>
             <a href="https://youtube.com/@amanahco" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">YouTube</a>
           </div>
           
