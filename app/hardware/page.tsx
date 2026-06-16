@@ -153,7 +153,7 @@ export default function Hardware() {
 
           {/* The Amanah Transparency Clause */}
           <p className="text-[10px] md:text-xs text-[#FAF9F6]/70 mt-6 max-w-xs mx-auto leading-relaxed relative z-10 text-center">
-            <span className="font-bold text-[#B8860B]">Our Promise (Amanah):</span> If we do not reach our 540 allocation goal by 31 December 2026, your £139.00 will be refunded in full, automatically. Total transparency. Zero risk.
+            <span className="font-bold text-[#B8860B]">Our Promise (Amanah):</span> If we do not reach our 540 allocation goal by 31 March 2027, your £139.00 will be refunded in full, automatically. Total transparency. Zero risk.
           </p>
         </div>
       </div>
