@@ -130,30 +130,34 @@ export default function Hardware() {
             </div>
           </div>
           <div className="mb-8 p-6 bg-stone-50 rounded-2xl border border-stone-200 text-center shadow-sm">
-  <h3 className="text-xs uppercase tracking-widest text-stone-500 font-semibold mb-2">
-    Phase One Manufacturing
-  </h3>
-  <div className="flex items-baseline justify-center gap-2">
-    <span className="text-4xl font-bold text-stone-900">0</span>
-    <span className="text-xl text-stone-400">/ 540</span>
-  </div>
-  <p className="text-sm text-stone-600 mt-3">
-    Allocations secured to fund the aerospace titanium molds.
-  </p>
-</div>
+            <h3 className="text-xs uppercase tracking-widest text-stone-500 font-semibold mb-2">
+              Phase One Manufacturing
+            </h3>
+            <div className="flex items-baseline justify-center gap-2">
+              <span className="text-4xl font-bold text-stone-900">0</span>
+              <span className="text-xl text-stone-400">/ 540</span>
+            </div>
+            <p className="text-sm text-stone-600 mt-3">
+              Allocations secured to fund the aerospace titanium molds.
+            </p>
+          </div>
+          
           {/* THE UPDATED SECURE CHECKOUT BUTTON */}
           <button 
             onClick={handleCheckout}
             disabled={isProcessing}
             className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isProcessing ? 'Securing Sanctuary...' : 'Secure Your Allocation - £139.00'}
+            {isProcessing ? 'Securing Sanctuary...' : 'Secure Your Pre-Order Pledge - £139.00'}
           </button>
+
+          {/* The Amanah Transparency Clause */}
+          <p className="text-[10px] md:text-xs text-[#FAF9F6]/70 mt-6 max-w-xs mx-auto leading-relaxed relative z-10 text-center">
+            <span className="font-bold text-[#B8860B]">Our Promise (Amanah):</span> If we do not reach our 540 allocation goal by 31 December 2026, your £139.00 will be refunded in full, automatically. Total transparency. Zero risk.
+          </p>
         </div>
       </div>
 
-     
-      
     </main>
   );
 }

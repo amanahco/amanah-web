@@ -64,9 +64,9 @@ export default function Home() {
           <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
             A physical extension of your digital sanctuary. We are engineering a premium wearable device with haptic feedback, completely free of screens and digital distractions. Pure privacy. Quiet luxury.
           </p>
-          <button className="inline-block border-2 border-[#0b2f28] text-[#0b2f28] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#0b2f28] hover:text-[#FAF9F6] transition-all duration-300">
-            Coming Soon
-          </button>
+          <Link href="/hardware" className="inline-block border-2 border-[#0b2f28] text-[#0b2f28] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#0b2f28] hover:text-[#FAF9F6] transition-all duration-300">
+            Explore the Hardware
+          </Link>
         </div>
 
       </div>
