@@ -1,7 +1,8 @@
 /**
- * UI: Amanah Web Storefront - Perfect Symmetry
- * Description: Background anchored to top-center (origin-top) to maintain flawless screen symmetry.
- * Hacky menu offsets removed. All text now perfectly centered within the true middle of the arch.
+ * UI: Amanah Web Storefront - Perfect Symmetry & Ecosystem
+ * Description: Background anchored to top-center.
+ * Double-footer glitch eradicated. 
+ * Cross-pollination links added for the Amanah Application.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -10,11 +11,10 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
+    <main className="w-full relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
       
-      {/* 1. The Fixed Architecture */}
-      <div className="fixed inset-0 w-full h-[100dvh] z-0 overflow-hidden bg-[#FAF9F6]">
-        {/* origin-top ensures the image scales outward equally, keeping the arch perfectly centered while pushing the bottom watermark off-screen. */}
+      {/* 1. The Fixed Architecture (z-[-1] ensures it sits strictly behind the global footer) */}
+      <div className="fixed inset-0 w-full h-[100dvh] z-[-1] overflow-hidden bg-[#FAF9F6]">
         <img 
           src="/amanah-sanctuary-bg.png" 
           alt="Amanah Sanctuary" 
@@ -25,10 +25,10 @@ export default function Home() {
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
-        {/* Expanded Top Navigation Menu (Perfectly Centered, Offsets Removed) */}
-        <nav className="w-full max-w-md mx-auto flex flex-wrap justify-center items-center gap-x-3 gap-y-4 md:gap-x-5 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
+        {/* Expanded Top Navigation Menu: Now featuring 'Software' */}
+        <nav className="w-full max-w-lg mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-4 md:gap-x-6 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
           <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
-          <Link href="/story" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Our Story</Link>
+          <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
           <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
           <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors text-center leading-[1.2]">
             Quran<br />Download
@@ -53,7 +53,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Coming Soon: Hardware Section */}
+        {/* Physical Ecosystem: Hardware Section */}
         <div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
             In Development
@@ -69,25 +69,23 @@ export default function Home() {
           </Link>
         </div>
 
-      </div>
-
-      {/* Official Footer with Comprehensive Social Links Restored for Landing Page Layering */}
-      <footer className="relative z-10 mt-auto pt-24 pb-8 flex flex-col items-center gap-6 w-full">
-        
-        {/* Amanah Socials Ecosystem */}
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
-          <a href="https://instagram.com/amanah_collective" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">Instagram</a>
-          <a href="https://twitter.com/amanah_c0" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">X (Twitter)</a>
-          <a href="https://tiktok.com/@amanah.co99" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">TikTok</a>
-          <a href="https://youtube.com/@AmanahCollective" target="_blank" rel="noopener noreferrer" className="hover:text-[#B8860B] transition-colors duration-300">YouTube</a>
+        {/* Digital Ecosystem: Software Section Bridge */}
+        <div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
+          <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
+            Pending Review
+          </div>
+          <h3 className="text-[#0b2f28] text-2xl md:text-3xl font-bold mb-6">
+            The Amanah Application
+          </h3>
+          <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
+            Your offline sanctuary. Featuring the true tactile Indo-Pak Quran engine, minimalist Qibla compass, and complete Jumu'ah hub with zero behavioral tracking.
+          </p>
+          <Link href="/software" className="inline-block bg-[#0b2f28] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#0b2f28] border-2 border-[#0b2f28] transition-all duration-300">
+            Discover the App
+          </Link>
         </div>
 
-        {/* Verified Amanah Watermark */}
-        <p className="text-[10px] md:text-xs font-semibold tracking-[0.15em] text-[#0b2f28] uppercase drop-shadow-sm opacity-80">
-          Amanah Collective Ltd ©️ 2026
-        </p>
-      </footer>
-
+      </div>
     </main>
   );
 }
