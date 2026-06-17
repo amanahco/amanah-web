@@ -75,12 +75,7 @@ export default function OurStory() {
       </div>
 
       {/* Official Footer */}
-      <footer className="mt-16 text-center border-t border-[#051410]/10 w-full max-w-5xl pt-10">
-        <p className="text-[10px] font-bold tracking-[0.3em] text-[#051410]/40 uppercase">
-          Amanah Collective Ltd ©️ 2026
-        </p>
-      </footer>
-      
+ 
     </main>
   );
 }
