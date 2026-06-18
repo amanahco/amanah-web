@@ -49,7 +49,7 @@ export default function Invitation() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              At the absolute core of our existence is Tawheed—the profound understanding that there is only One Creator, Sustainer, and Lord of the universe. He is Allah. He has no partners, no equals, and no beginning or end. True peace is found when the human heart submits to the One who fashioned it.
+              At the absolute core of our existence is Tawheed. This is the profound understanding that there is only One Creator, Sustainer, and Lord of the universe. He is Allah. He has no partners, no equals, and no beginning or end. True peace is found when the human heart submits to the One who fashioned it.
             </p>
           </div>
         </div>
