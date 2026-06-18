@@ -63,8 +63,8 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Physical Ecosystem: Hardware Section */}
-        <div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
+{/* Physical Ecosystem: Hardware Section */}
+<div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
             In Development
           </div>
@@ -74,11 +74,10 @@ export default function Home() {
           <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
             A physical extension of your digital sanctuary. We are engineering a premium wearable device with haptic feedback, completely free of screens and digital distractions. Pure privacy. Quiet luxury.
           </p>
-          <Link href="/hardware" className="inline-block border-2 border-[#0b2f28] text-[#0b2f28] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#0b2f28] hover:text-[#FAF9F6] transition-all duration-300">
+          <Link href="/hardware" className="inline-block bg-[#0b2f28] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#0b2f28] border-2 border-[#0b2f28] transition-all duration-300">
             Explore the Hardware
           </Link>
         </div>
-
         {/* Digital Ecosystem: Software Section Bridge */}
         <div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
