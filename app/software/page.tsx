@@ -46,11 +46,11 @@ export default function Software() {
         </div>
       </div>
 
-      {/* Feature Grid Architecture */}
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
+{/* Feature Grid Architecture */}
+<div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Core Feature 1: The Quran Engine */}
-        <div className="bg-[#051410] text-[#FAF9F6] p-10 rounded-[2rem] flex flex-col h-full shadow-xl relative overflow-hidden">
+        <div className="bg-[#051410] text-[#FAF9F6] p-10 rounded-[2rem] flex flex-col h-full shadow-xl relative overflow-hidden border border-[#B8860B]/20">
           <div className="absolute top-0 right-0 w-24 h-24 bg-[#B8860B]/10 rounded-bl-full blur-xl"></div>
           <h3 className="text-xl font-serif text-[#B8860B] mb-4 relative z-10">True Offline Quran</h3>
           <p className="text-sm leading-relaxed opacity-90 relative z-10 flex-grow">
@@ -59,18 +59,20 @@ export default function Software() {
         </div>
 
         {/* Core Feature 2: Visual Education */}
-        <div className="bg-[#EAE6DF] border border-[#B8860B]/10 p-10 rounded-[2rem] flex flex-col h-full shadow-md">
-          <h3 className="text-xl font-serif text-[#051410] mb-4">Uncompromising Etiquette</h3>
-          <p className="text-sm text-[#051410]/80 leading-relaxed flex-grow">
+        <div className="bg-[#051410] text-[#FAF9F6] p-10 rounded-[2rem] flex flex-col h-full shadow-xl relative overflow-hidden border border-[#B8860B]/20">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-[#B8860B]/10 rounded-bl-full blur-xl"></div>
+          <h3 className="text-xl font-serif text-[#B8860B] mb-4 relative z-10">Uncompromising Etiquette</h3>
+          <p className="text-sm leading-relaxed opacity-90 relative z-10 flex-grow">
             Our step-by-step visual guides for Wudu and Salah are crafted with pure ethical representation. Utilizing dignified male silhouettes only, ensuring an environment of utmost modesty and respect.
           </p>
         </div>
 
         {/* Core Feature 3: The Sanctuary */}
-        <div className="bg-[#EAE6DF] border border-[#B8860B]/10 p-10 rounded-[2rem] flex flex-col h-full shadow-md">
-          <h3 className="text-xl font-serif text-[#051410] mb-4">The Jumu'ah Hub</h3>
-          <p className="text-sm text-[#051410]/80 leading-relaxed flex-grow">
-            A dedicated portal featuring the minimalist Qibla Sensor, continuous Surah Al-Kahf hifz loops, and a structured Sunnah checklist. Experience a digital environment that honors your spiritual rhythm.
+        <div className="bg-[#051410] text-[#FAF9F6] p-10 rounded-[2rem] flex flex-col h-full shadow-xl relative overflow-hidden border border-[#B8860B]/20">
+           <div className="absolute top-0 right-0 w-24 h-24 bg-[#B8860B]/10 rounded-bl-full blur-xl"></div>
+          <h3 className="text-xl font-serif text-[#B8860B] mb-4 relative z-10">The Jumu'ah Hub</h3>
+          <p className="text-sm leading-relaxed opacity-90 relative z-10 flex-grow">
+            A dedicated portal featuring the minimalist Qibla Sensor, continuous Surah Al-Kahf hifz loops, and a structured Sunnah checklist. Experience a digital environment that honours your spiritual rhythm.
           </p>
         </div>
 

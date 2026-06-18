@@ -26,15 +26,13 @@ export default function Home() {
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
-        {/* Expanded Top Navigation Menu: Now featuring The Invitation */}
-        <nav className="w-full max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-4 md:gap-x-6 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
+{/* Expanded Top Navigation Menu: Compacted to fit perfectly inside the Arch */}
+<nav className="w-full max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-x-3 md:gap-x-6 gap-y-3 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
           <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
           <Link href="/invitation" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Invitation</Link>
           <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
           <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
-          <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors text-center leading-[1.2]">
-            Quran<br />Download
-          </Link>
+          <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
         </nav>
 
         {/* Brand Header */}
