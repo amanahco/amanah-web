@@ -27,12 +27,22 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
 {/* Expanded Top Navigation Menu: Strictly constrained to respect the Arch boundaries */}
-<nav className="w-full max-w-[280px] sm:max-w-sm md:max-w-md mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-3 md:gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-12 md:mb-16 drop-shadow-md uppercase">
-          <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
-          <Link href="/invitation" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Invitation</Link>
-          <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
-          <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
-          <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
+{/* Expanded Top Navigation Menu: Split into two elegant tiers to flawlessly fit the Arch */}
+<nav className="w-full flex flex-col items-center justify-center gap-y-3 md:gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-12 md:mb-16 drop-shadow-md uppercase">
+          
+          {/* Tier 1: Core Ethos & Digital */}
+          <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
+            <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
+            <Link href="/invitation" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Invitation</Link>
+            <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
+          </div>
+
+          {/* Tier 2: Physical & Spiritual */}
+          <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
+            <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
+            <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
+          </div>
+
         </nav>
 
         {/* Brand Header */}
