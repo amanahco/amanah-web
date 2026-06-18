@@ -1,8 +1,9 @@
 /**
  * UI: Amanah Web Storefront - Perfect Symmetry & Ecosystem
- * Description: Background anchored to top-center.
- * Double-footer glitch eradicated. 
- * Cross-pollination links added for the Amanah Application.
+ * Description: Background anchored to top center.
+ * Double footer glitch eradicated. 
+ * Cross pollination links added for the Amanah Application.
+ * The Invitation Dawah portal added to main navigation.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <main className="w-full relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
       
-      {/* 1. The Fixed Architecture (z-[-1] ensures it sits strictly behind the global footer) */}
+      {/* 1. The Fixed Architecture */}
       <div className="fixed inset-0 w-full h-[100dvh] z-[-1] overflow-hidden bg-[#FAF9F6]">
         <img 
           src="/amanah-sanctuary-bg.png" 
@@ -25,9 +26,10 @@ export default function Home() {
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
-        {/* Expanded Top Navigation Menu: Now featuring 'Software' */}
-        <nav className="w-full max-w-lg mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-4 md:gap-x-6 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
+        {/* Expanded Top Navigation Menu: Now featuring The Invitation */}
+        <nav className="w-full max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-4 md:gap-x-6 text-[10px] md:text-xs font-bold tracking-[0.15em] text-[#B8860B] mb-16 drop-shadow-md uppercase">
           <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
+          <Link href="/invitation" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Invitation</Link>
           <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
           <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
           <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors text-center leading-[1.2]">
@@ -46,7 +48,7 @@ export default function Home() {
         {/* The Manifesto Block */}
         <div className="text-[#0b2f28] text-base md:text-lg leading-relaxed space-y-7 max-w-xl mx-auto font-medium">
           <p>
-            Built on uncompromising modesty, privacy-first technology, and zero tracking.
+            Built on uncompromising modesty, privacy first technology, and zero tracking.
           </p>
           <p>
             We are creating an ecosystem designed purely for your peace of mind. No surveillance, no intrusive algorithms. Just a serene gateway to your daily habits and faith.
@@ -78,7 +80,7 @@ export default function Home() {
             The Amanah Application
           </h3>
           <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
-            Your offline sanctuary. Featuring the true tactile Indo-Pak Quran engine, minimalist Qibla compass, and complete Jumu'ah hub with zero behavioral tracking.
+            Your offline sanctuary. Featuring the true tactile Indo Pak Quran engine, minimalist Qibla compass, and complete Jumu'ah hub with zero behavioural tracking.
           </p>
           <Link href="/software" className="inline-block bg-[#0b2f28] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#0b2f28] border-2 border-[#0b2f28] transition-all duration-300">
             Discover the App
