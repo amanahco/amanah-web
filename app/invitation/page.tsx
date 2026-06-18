@@ -1,8 +1,8 @@
 /**
- * UI: Amanah Web Storefront - The Invitation (Da'wah Portal)
+ * UI: Amanah Web Storefront - The Invitation (Dawah Portal)
  * Description: A serene, universal introduction to Islam.
  * Focuses on Tawheed, the Noble Quran, and the Sunnah.
- * Designed with strict 'Quiet Luxury' aesthetics.
+ * Designed with strict Quiet Luxury aesthetics.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -27,7 +27,7 @@ export default function Invitation() {
       {/* Hero Section */}
       <div className="w-full max-w-4xl flex flex-col items-center text-center mb-24 mt-4">
         <h2 className="text-xs md:text-sm font-bold tracking-[0.3em] text-[#B8860B] mb-6 uppercase">
-          Bismillah ir-Rahman ir-Rahim
+          Bismillahir Rahmanir Rahim
         </h2>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-10 text-[#051410] tracking-wide leading-tight">
           An Invitation to Peace.
