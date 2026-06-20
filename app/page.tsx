@@ -3,7 +3,7 @@
  * Description: Background anchored to top center.
  * Double footer glitch eradicated. 
  * Cross pollination links added for the Amanah Application.
- * The Invitation Dawah portal added to main navigation.
+ * The Invitation Dawah portal and Sacred Heritage added to main navigation.
  * Amanah Collective Ltd ©️ 2026
  */
 
@@ -26,19 +26,19 @@ export default function Home() {
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
-{/* Expanded Top Navigation Menu: Strictly constrained to respect the Arch boundaries */}
-{/* Expanded Top Navigation Menu: Split into two elegant tiers to flawlessly fit the Arch */}
-<nav className="w-full flex flex-col items-center justify-center gap-y-3 md:gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-12 md:mb-16 drop-shadow-md uppercase">
+        {/* Expanded Top Navigation Menu: Perfectly balanced three by three tier system */}
+        <nav className="w-full flex flex-col items-center justify-center gap-y-3 md:gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-12 md:mb-16 drop-shadow-md uppercase">
           
-          {/* Tier 1: Core Ethos & Digital */}
+          {/* Tier 1: Ethos & Knowledge */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
             <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
             <Link href="/invitation" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Invitation</Link>
-            <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
+            <Link href="/heritage" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Heritage</Link>
           </div>
 
-          {/* Tier 2: Physical & Spiritual */}
+          {/* Tier 2: Digital & Physical */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
+            <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
             <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
             <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
           </div>
@@ -63,8 +63,8 @@ export default function Home() {
           </p>
         </div>
 
-{/* Physical Ecosystem: Hardware Section */}
-<div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
+        {/* Physical Ecosystem: Hardware Section */}
+        <div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
             In Development
           </div>
@@ -78,6 +78,7 @@ export default function Home() {
             Explore the Hardware
           </Link>
         </div>
+        
         {/* Digital Ecosystem: Software Section Bridge */}
         <div className="mt-16 pt-16 border-t border-[#B8860B]/30 w-full max-w-lg mx-auto">
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
