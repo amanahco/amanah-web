@@ -6,49 +6,14 @@
  * Uses an aggressive CSS crop (`scale-[1.15] translate-y-4 translate-x-4`) 
  * to completely eradicate the stubborn Gemini watermark.
  * Features the corrected "Founder's Access" luxury copy.
- * Integrated with secure Stripe checkout route.
+ * Integrated with secure live Stripe checkout link.
  * Amanah Collective Ltd ©️ 2026
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 export default function Hardware() {
-  // State to handle the loading spinner when they click
-  const [isProcessing, setIsProcessing] = useState(false);
-
-  // The function that securely triggers Stripe
-  const handleCheckout = async () => {
-    setIsProcessing(true);
-    try {
-      const response = await fetch('/api/checkout', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          userEmail: 'guest@amanahco.co', // We can connect this to actual user auth later
-          ringSize: 'Standard',
-          edition: 'Universal Titanium', 
-          isFoundingMember: false,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (data.url) {
-        // Instantly redirects the supporter to your secure Stripe hosted checkout
-        window.location.href = data.url; 
-      } else {
-        console.error('Checkout failed:', data.error);
-      }
-    } catch (error) {
-      console.error('Frontend Error:', error);
-    } finally {
-      setIsProcessing(false);
-    }
-  };
-
   return (
     <main className="min-h-screen bg-[#FAF9F6] flex flex-col items-center pt-12 pb-24 px-6 md:px-12 font-sans text-[#051410] overflow-x-hidden">
       
@@ -129,27 +94,28 @@ export default function Hardware() {
               <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Hardware Allocation.</strong> Early access to the Dhikr rings, priority discounts, and absolute data sovereignty.</p>
             </div>
           </div>
-          <div className="mb-8 p-6 bg-stone-50 rounded-2xl border border-stone-200 text-center shadow-sm">
-            <h3 className="text-xs uppercase tracking-widest text-stone-500 font-semibold mb-2">
+          
+          {/* Phase One Tracker Box */}
+          <div className="mb-8 p-6 bg-stone-50/10 rounded-2xl border border-stone-200/20 text-center shadow-sm relative z-10">
+            <h3 className="text-xs uppercase tracking-widest text-stone-400 font-semibold mb-2">
               Phase One Manufacturing
             </h3>
             <div className="flex items-baseline justify-center gap-2">
-              <span className="text-4xl font-bold text-stone-900">0</span>
+              <span className="text-4xl font-bold text-[#FAF9F6]">0</span>
               <span className="text-xl text-stone-400">/ 540</span>
             </div>
-            <p className="text-sm text-stone-600 mt-3">
+            <p className="text-sm text-stone-400 mt-3">
               Allocations secured to fund the aerospace titanium molds.
             </p>
           </div>
           
-          {/* THE UPDATED SECURE CHECKOUT BUTTON */}
-          <button 
-            onClick={handleCheckout}
-            disabled={isProcessing}
-            className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10 disabled:opacity-50 disabled:cursor-not-allowed"
+          {/* THE UPDATED SECURE LIVE STRIPE CHECKOUT BUTTON */}
+          <Link 
+            href="https://buy.stripe.com/eVq3cvc254Kib0s45m6Vq01"
+            className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10"
           >
-            {isProcessing ? 'Securing Sanctuary...' : 'Secure Your Pre-Order Pledge - £139.00'}
-          </button>
+            Secure Your Pre-Order Pledge - £139.00
+          </Link>
 
           {/* The Amanah Transparency Clause */}
           <p className="text-[10px] md:text-xs text-[#FAF9F6]/70 mt-6 max-w-xs mx-auto leading-relaxed relative z-10 text-center">
