@@ -1,18 +1,48 @@
+"use client";
+
 /**
  * UI: Amanah Web Storefront - Perfect Symmetry & Ecosystem
  * Description: Background anchored to top center.
  * Double footer glitch eradicated. 
  * Cross pollination links added for the Amanah Application.
  * The Invitation Dawah portal and Sacred Heritage added to main navigation.
+ * Live Hijri and Gregorian date anchored to the top.
  * Amanah Collective Ltd ©️ 2026
  */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Home() {
+  const [dateText, setDateText] = useState("");
+
+  useEffect(() => {
+    const today = new Date();
+    
+    // Natively format to UK Gregorian
+    const gregorian = new Intl.DateTimeFormat('en-GB', {
+      weekday: 'long', 
+      day: 'numeric', 
+      month: 'long', 
+      year: 'numeric'
+    }).format(today);
+
+    // Natively format to Islamic calendar in English
+    const hijri = new Intl.DateTimeFormat('en-GB-u-ca-islamic-umalqura', {
+       day: 'numeric', 
+       month: 'long', 
+       year: 'numeric'
+    }).format(today);
+
+    // Remove any native browser commas to ensure pure Amanah minimalism
+    const cleanGregorian = gregorian.replace(/,/g, '');
+    const cleanHijri = hijri.replace(/,/g, '');
+
+    setDateText(`${cleanGregorian} | ${cleanHijri}`);
+  }, []);
+
   return (
-    <main className="w-full relative flex flex-col items-center pt-24 md:pt-[8vw] px-4 pb-12 overflow-x-hidden">
+    <main className="w-full relative flex flex-col items-center pt-16 md:pt-[6vw] px-4 pb-12 overflow-x-hidden">
       
       {/* 1. The Fixed Architecture */}
       <div className="fixed inset-0 w-full h-[100dvh] z-[-1] overflow-hidden bg-[#FAF9F6]">
@@ -25,6 +55,11 @@ export default function Home() {
 
       {/* 2. The Interactive Text Sanctuary */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
+
+        {/* The Live Daily Date */}
+        <div className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#0b2f28]/70 uppercase mb-8 h-4">
+          {dateText}
+        </div>
 
         {/* Expanded Top Navigation Menu: Perfectly balanced three by three tier system */}
         <nav className="w-full flex flex-col items-center justify-center gap-y-3 md:gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-12 md:mb-16 drop-shadow-md uppercase">
