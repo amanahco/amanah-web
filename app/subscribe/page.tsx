@@ -1,3 +1,10 @@
+/**
+ * Tahir Archive: Web Subscription Portal
+ * Date: 24 June 2026
+ * Description: Secure checkout bridge mirroring the Amanah Vault aesthetic.
+ * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
+ */
+
 import React from 'react';
 import { Metadata } from 'next';
 
@@ -40,9 +47,14 @@ export default function SubscribePage() {
             <div className="text-left md:text-right flex-shrink-0">
               <p className="text-2xl font-bold text-[#2E4A35]">£2.99</p>
               <p className="text-xs text-[#545947] uppercase tracking-wide font-semibold mt-1">/ month</p>
-              <button className="mt-4 w-full md:w-auto bg-[#2E4A35] hover:bg-[#253c2b] text-[#F5F2ED] font-semibold py-2.5 px-6 rounded-xl transition-colors shadow-sm">
+              
+              {/* LIVE STRIPE LINK INTEGRATED HERE */}
+              <a 
+                href="https://buy.stripe.com/eVq3cvc254Kib0s45m6Vq01"
+                className="mt-4 block w-full md:w-auto bg-[#2E4A35] hover:bg-[#253c2b] text-[#F5F2ED] text-center font-semibold py-2.5 px-6 rounded-xl transition-colors shadow-sm"
+              >
                 Select Pioneer
-              </button>
+              </a>
             </div>
           </div>
 
@@ -63,9 +75,14 @@ export default function SubscribePage() {
             <div className="text-left md:text-right flex-shrink-0">
               <p className="text-2xl font-bold text-[#2E4A35]">£35.00</p>
               <p className="text-xs text-[#545947] uppercase tracking-wide font-semibold mt-1">/ year</p>
-              <button className="mt-4 w-full md:w-auto bg-[#2E4A35] hover:bg-[#253c2b] text-[#F5F2ED] font-semibold py-2.5 px-6 rounded-xl transition-colors shadow-sm">
+              
+              {/* PLACEHOLDER FOR NEXT STRIPE LINK */}
+              <a 
+                href="#"
+                className="mt-4 block w-full md:w-auto bg-[#2E4A35] hover:bg-[#253c2b] text-[#F5F2ED] text-center font-semibold py-2.5 px-6 rounded-xl transition-colors shadow-sm"
+              >
                 Select Annual
-              </button>
+              </a>
             </div>
           </div>
 
@@ -85,9 +102,14 @@ export default function SubscribePage() {
             <div className="text-left md:text-right flex-shrink-0">
               <p className="text-2xl font-bold text-[#F5F2ED]">£50.00</p>
               <p className="text-xs text-[#F5F2ED]/70 uppercase tracking-wide font-semibold mt-1">once</p>
-              <button className="mt-4 w-full md:w-auto bg-[#F5F2ED] hover:bg-white text-[#2E4A35] font-bold py-2.5 px-6 rounded-xl transition-colors shadow-sm">
+              
+              {/* PLACEHOLDER FOR FINAL STRIPE LINK */}
+              <a 
+                href="#"
+                className="mt-4 block w-full md:w-auto bg-[#F5F2ED] hover:bg-white text-[#2E4A35] text-center font-bold py-2.5 px-6 rounded-xl transition-colors shadow-sm"
+              >
                 Become a Founder
-              </button>
+              </a>
             </div>
           </div>
 
