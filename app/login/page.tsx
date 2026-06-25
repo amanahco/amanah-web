@@ -1,8 +1,8 @@
 /**
- * UI: Amanah Web Storefront - Member Access (Magic Link & Contribution)
- * Description: The secure, passwordless gateway to the digital sanctuary.
- * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology. Privacy-first architecture.
- * Amanah Collective Ltd ©️ 2026
+ * UI: Amanah Web Storefront Member Access (Magic Link & Contribution)
+ * Description: The secure passwordless gateway to the digital sanctuary.
+ * STRICT PROTOCOL APPLIED: UK English only. Pure Islamic terminology. Privacy first architecture.
+ * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
 
 import React from 'react';
@@ -29,7 +29,7 @@ export default function MemberAccess() {
         {/* Card Header */}
         <div className="p-10 pb-8 text-center border-b border-[#FAF9F6]/10">
           <h1 className="text-3xl font-serif text-[#B8860B] mb-3">Member Access.</h1>
-          <p className="text-[#FAF9F6]/70 text-sm tracking-wide">Enter via secure, passwordless authentication.</p>
+          <p className="text-[#FAF9F6]/70 text-sm tracking-wide">Enter via secure passwordless authentication.</p>
         </div>
 
         {/* Form Section */}
@@ -47,12 +47,13 @@ export default function MemberAccess() {
               />
             </div>
 
-            <button 
-              type="submit" 
-              className="mt-2 w-full bg-[#B8860B] text-[#051410] py-4 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 shadow-lg"
+            {/* Converted to a Link to seamlessly route to Dashboard for your testing */}
+            <Link 
+              href="/dashboard" 
+              className="mt-2 w-full bg-[#B8860B] text-[#051410] py-4 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 shadow-lg text-center block"
             >
               Send Secure Link
-            </button>
+            </Link>
             
           </form>
 
@@ -62,7 +63,7 @@ export default function MemberAccess() {
                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
              </span>
              <p className="text-[#FAF9F6]/50 text-[10px] tracking-wide max-w-[200px] leading-relaxed">
-               A single-use link will be dispatched. Zero surveillance.
+               A single use link will be dispatched. Zero surveillance.
              </p>
           </div>
         </div>
@@ -84,15 +85,13 @@ export default function MemberAccess() {
           <div className="h-[1px] flex-grow bg-[#051410]"></div>
         </div>
 
-        {/* Support the Mission Route */}
+        {/* Support the Mission Route - NOW CONNECTED TO /SUBSCRIBE */}
         <p className="text-[#051410]/70 text-sm">
           Wish to support the continuous charity without hardware? <br className="md:hidden"/>
-          <Link href="#" className="text-[#B8860B] font-bold hover:text-[#051410] transition-colors duration-300 border-b border-[#B8860B]/30 pb-1 ml-1 mt-2 inline-block">Make a Direct Contribution</Link>
+          <Link href="/subscribe" className="text-[#B8860B] font-bold hover:text-[#051410] transition-colors duration-300 border-b border-[#B8860B]/30 pb-1 ml-1 mt-2 inline-block">Make a Direct Contribution</Link>
         </p>
 
       </div>
-
-
       
     </main>
   );
