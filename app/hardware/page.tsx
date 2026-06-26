@@ -1,13 +1,13 @@
 "use client";
 
 /**
- * UI: Amanah Web Storefront - Hardware Sanctuary (Gemini Masterpiece)
- * Description: Cinematic gallery layout using the perfected Gemini image.
- * Uses an aggressive CSS crop (`scale-[1.15] translate-y-4 translate-x-4`) 
- * to completely eradicate the stubborn Gemini watermark.
- * Features the corrected "Founder's Access" luxury copy.
+ * UI: Amanah Web Storefront Hardware Sanctuary
+ * Description: Cinematic gallery layout using the perfected image.
+ * Uses an aggressive CSS crop (scale-[1.15] translate-y-4 translate-x-4) 
+ * to completely eradicate the stubborn watermark.
+ * Features the corrected Founders Access luxury copy.
  * Integrated with secure live Stripe checkout link.
- * Amanah Collective Ltd ©️ 2026
+ * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
 
 import React from 'react';
@@ -34,7 +34,7 @@ export default function Hardware() {
           Silent Companions.
         </h1>
         
-        {/* THE CLEAN CONCEPT IMAGE - Framed perfectly with aggressive CSS crop to kill watermark */}
+        {/* THE CLEAN CONCEPT IMAGE Framed perfectly with aggressive CSS crop to kill watermark */}
         <div className="w-full rounded-[2rem] overflow-hidden shadow-2xl border border-[#B8860B]/10 bg-[#EAE6DF]">
           <img 
             src="/amanah-ring-concept.png" 
@@ -44,16 +44,16 @@ export default function Hardware() {
         </div>
       </div>
 
-      {/* Details & Founder's Box Layout */}
+      {/* Details & Founders Box Layout */}
       <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start text-left">
         
         {/* Left Column: Product Details */}
         <div className="flex flex-col mt-4">
           <p className="text-xl md:text-2xl text-[#051410] leading-relaxed font-serif italic mb-8">
-            "Sculpted with the subtle permanence of aerospace titanium and premium rose gold, unified by a smooth, dark ceramic core."
+            "Sculpted with the subtle permanence of aerospace titanium and premium rose gold unified by a smooth dark ceramic core."
           </p>
           <p className="text-sm text-[#051410]/80 leading-loose mb-12">
-            Designed entirely for Dhikr and Tasbih, the Amanah ring acts as a discrete haptic companion for your daily spiritual journey. By eliminating screens and intrusive data tracking, we restore the sanctity of your focus and faith.
+            Designed entirely for Dhikr and Tasbih the Amanah ring acts as a discrete haptic companion for your daily spiritual journey. By eliminating screens and intrusive data tracking we restore the sanctity of your focus and faith.
           </p>
           
           <div className="flex flex-col gap-6 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#051410]">
@@ -67,7 +67,7 @@ export default function Hardware() {
                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#B8860B]/10 text-[#B8860B]">
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                </span>
-               Biocompatible & Hard-wearing
+               Biocompatible & Hard wearing
             </div>
             <div className="flex items-center gap-4">
                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#B8860B]/10 text-[#B8860B]">
@@ -78,20 +78,20 @@ export default function Hardware() {
           </div>
         </div>
 
-        {/* Right Column: Founder's Tier Box */}
+        {/* Right Column: Founders Tier Box */}
         <div className="bg-[#051410] text-[#FAF9F6] p-10 md:p-14 rounded-[2rem] shadow-2xl relative overflow-hidden border border-[#B8860B]/20">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#B8860B]/10 rounded-bl-[100px] blur-2xl"></div>
           
-          <h3 className="text-2xl md:text-3xl font-serif text-[#B8860B] mb-10 relative z-10">Founder's Access.</h3>
+          <h3 className="text-2xl md:text-3xl font-serif text-[#B8860B] mb-10 relative z-10">Founders Access.</h3>
           
           <div className="space-y-8 mb-12 text-sm leading-relaxed relative z-10">
             <div className="flex items-start gap-4">
               <span className="text-[#B8860B] font-bold text-lg mt-[-3px]">→</span>
-              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Sanctuary Membership.</strong> Looping Hifz audio, daily tafsir reflections, and a completely ad-free environment.</p>
+              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Sanctuary Membership.</strong> Looping Hifz audio daily tafsir reflections and a completely ad free environment.</p>
             </div>
             <div className="flex items-start gap-4">
               <span className="text-[#B8860B] font-bold text-lg mt-[-3px]">☖</span>
-              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Hardware Allocation.</strong> Early access to the Dhikr rings, priority discounts, and absolute data sovereignty.</p>
+              <p><strong className="block text-[#FAF9F6] mb-2 font-serif text-lg tracking-wide">Hardware Allocation.</strong> Early access to the Dhikr rings priority discounts and absolute data sovereignty.</p>
             </div>
           </div>
           
@@ -105,7 +105,7 @@ export default function Hardware() {
               <span className="text-xl text-stone-400">/ 540</span>
             </div>
             <p className="text-sm text-stone-400 mt-3">
-              Allocations secured to fund the aerospace titanium molds.
+              Allocations secured to fund the aerospace titanium moulds.
             </p>
           </div>
           
@@ -114,12 +114,12 @@ export default function Hardware() {
             href="https://buy.stripe.com/eVq3cvc254Kib0s45m6Vq01"
             className="block text-center bg-[#B8860B] text-[#051410] py-4 px-6 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#FAF9F6] transition-colors duration-300 w-full shadow-lg relative z-10"
           >
-            Secure Your Pre-Order Pledge - £139.00
+            Secure Your Pre Order Pledge £139.00
           </Link>
 
           {/* The Amanah Transparency Clause */}
           <p className="text-[10px] md:text-xs text-[#FAF9F6]/70 mt-6 max-w-xs mx-auto leading-relaxed relative z-10 text-center">
-            <span className="font-bold text-[#B8860B]">Our Promise (Amanah):</span> If we do not reach our 540 allocation goal by 31 March 2027, your £139.00 will be refunded in full, automatically. Total transparency. Zero risk.
+            <span className="font-bold text-[#B8860B]">Our Promise (Amanah):</span> If we do not reach our 540 allocation goal by 31 March 2027 your £139.00 will be refunded in full automatically. Total transparency. Zero risk.
           </p>
         </div>
       </div>
