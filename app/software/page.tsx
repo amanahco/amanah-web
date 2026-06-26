@@ -1,9 +1,9 @@
 /**
- * UI: Amanah Web Storefront - Software Ecosystem
+ * UI: Amanah Web Storefront Software Ecosystem
  * Description: Cinematic showcase of the Amanah Application.
- * Highlights the True Offline Quran Engine (Indo-Pak script),
- * completely faceless visual guides, and zero-tracking architecture.
- * Amanah Collective Ltd ©️ 2026
+ * Highlights the True Offline Quran Engine (Indo Pak script)
+ * completely faceless visual guides and zero tracking architecture.
+ * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
 
 import React from 'react';
@@ -29,8 +29,9 @@ export default function Software() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 text-[#051410] tracking-wide">
           Pure Focus. Zero Distraction.
         </h1>
-        <p className="text-base md:text-lg text-[#051410]/80 leading-relaxed max-w-2xl font-medium mb-12">
-          The Amanah Application is a digital fortress for your faith. No behavior tracking, no gamified streaks, and no intrusive algorithms. Just quiet luxury and profound tranquility.
+        {/* Adjusted to match the soft elegance of the main page */}
+        <p className="text-sm md:text-base text-[#051410]/90 leading-relaxed max-w-2xl mb-12">
+          The Amanah Application is a digital fortress for your faith. No behaviour tracking no gamified streaks and no intrusive algorithms. Just quiet luxury and profound tranquility.
         </p>
 
         {/* Temporary App Store Badges */}
@@ -46,15 +47,15 @@ export default function Software() {
         </div>
       </div>
 
-{/* Feature Grid Architecture */}
-<div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Feature Grid Architecture */}
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Core Feature 1: The Quran Engine */}
         <div className="bg-[#051410] text-[#FAF9F6] p-10 rounded-[2rem] flex flex-col h-full shadow-xl relative overflow-hidden border border-[#B8860B]/20">
           <div className="absolute top-0 right-0 w-24 h-24 bg-[#B8860B]/10 rounded-bl-full blur-xl"></div>
           <h3 className="text-xl font-serif text-[#B8860B] mb-4 relative z-10">True Offline Quran</h3>
           <p className="text-sm leading-relaxed opacity-90 relative z-10 flex-grow">
-            Built from the ground up to support the familiar, tactile Indo-Pak script. Seamlessly toggle to Uthmani text with permanent, private ayah-level bookmarking. Completely accessible without an internet connection.
+            Built from the ground up to support the familiar tactile Indo Pak script. Seamlessly toggle to Uthmani text with permanent private ayah level bookmarking. Completely accessible without an internet connection.
           </p>
         </div>
 
@@ -63,7 +64,7 @@ export default function Software() {
           <div className="absolute top-0 right-0 w-24 h-24 bg-[#B8860B]/10 rounded-bl-full blur-xl"></div>
           <h3 className="text-xl font-serif text-[#B8860B] mb-4 relative z-10">Uncompromising Etiquette</h3>
           <p className="text-sm leading-relaxed opacity-90 relative z-10 flex-grow">
-            Our step-by-step visual guides for Wudu and Salah are crafted with pure ethical representation. Utilizing dignified male silhouettes only, ensuring an environment of utmost modesty and respect.
+            Our step by step visual guides for Wudu and Salah are crafted with pure ethical representation. Utilising dignified male silhouettes only ensuring an environment of utmost modesty and respect.
           </p>
         </div>
 
@@ -72,7 +73,7 @@ export default function Software() {
            <div className="absolute top-0 right-0 w-24 h-24 bg-[#B8860B]/10 rounded-bl-full blur-xl"></div>
           <h3 className="text-xl font-serif text-[#B8860B] mb-4 relative z-10">The Jumu'ah Hub</h3>
           <p className="text-sm leading-relaxed opacity-90 relative z-10 flex-grow">
-            A dedicated portal featuring the minimalist Qibla Sensor, continuous Surah Al-Kahf hifz loops, and a structured Sunnah checklist. Experience a digital environment that honours your spiritual rhythm.
+            A dedicated portal featuring the minimalist Qibla Sensor continuous Surah Al Kahf hifz loops and a structured Sunnah checklist. Experience a digital environment that honours your spiritual rhythm.
           </p>
         </div>
 
