@@ -1,13 +1,13 @@
 "use client";
 
 /**
- * UI: Amanah Web Storefront - Perfect Symmetry & Ecosystem
+ * UI: Amanah Web Storefront Perfect Symmetry & Ecosystem
  * Description: Background anchored to top center.
  * Double footer glitch eradicated. 
  * Cross pollination links added for the Amanah Application.
  * The Invitation Dawah portal and Sacred Heritage added to main navigation.
  * Live Hijri and Gregorian date anchored to the top.
- * Amanah Collective Ltd ©️ 2026
+ * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
 
 import React, { useState, useEffect } from 'react';
@@ -88,8 +88,8 @@ export default function Home() {
           Your Digital Sanctuary
         </h2>
 
-        {/* The Manifesto Block */}
-        <div className="text-[#0b2f28] text-base md:text-lg leading-relaxed space-y-7 max-w-xl mx-auto font-medium">
+        {/* The Manifesto Block perfectly matched to the lower text styles */}
+        <div className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed space-y-7 max-w-xl mx-auto">
           <p>
             Built on uncompromising modesty, privacy first technology, and zero tracking.
           </p>
