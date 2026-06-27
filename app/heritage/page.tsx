@@ -1,8 +1,9 @@
 /**
- * UI: Amanah Web Storefront - Sacred Heritage
- * Description: A serene educational guide covering the Creator, the lunar calendar, sacred sites, and Abrahamic roots.
+ * UI: Amanah Web Storefront Sacred Heritage
+ * Description: A serene educational guide covering the Creator the lunar calendar
+ * sacred sites the Golden Chain of Prophethood and the Noble Companions.
  * Designed with strict Quiet Luxury aesthetics.
- * Amanah Collective Ltd ©️ 2026
+ * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
 
 import React from 'react';
@@ -50,7 +51,7 @@ export default function Heritage() {
               At the absolute summit of all knowledge is the understanding of Allah and His boundless mercy. His mercy encompasses every single thing and forever precedes His divine wrath. He is the majestic Creator of the universe. He fashioned the heavens and the earth in six days. Above us exist seven mighty heavens. The prophetic tradition teaches us that the distance between each heaven is a vast journey of five hundred years. This is a beautiful testament to the unimaginable scale of His dominion.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              From His infinite power, Allah brought forth various forms of creation. He created the Angels from pure light to flawlessly execute His divine commands. Among them are Jibrael Alayhis Salaam, the trusted bringer of divine revelation, and Mikael Alayhis Salaam, who is tasked with the nourishment of the earth. He created the Jinn from smokeless fire. Finally, He fashioned mankind from earth, granting us the profound gift of free will so that our hearts may consciously choose to seek His truth.
+              From His infinite power Allah brought forth various forms of creation. He created the Angels from pure light to flawlessly execute His divine commands. Among them are Jibrael Alayhis Salaam the trusted bringer of divine revelation and Mikael Alayhis Salaam who is tasked with the nourishment of the earth. He created the Jinn from smokeless fire. Finally He fashioned mankind from earth granting us the profound gift of free will so that our hearts may consciously choose to seek His truth.
             </p>
           </div>
         </div>
@@ -64,7 +65,7 @@ export default function Heritage() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              The Islamic Hijri calendar is governed entirely by the phases of the moon. This is a profound contrast to the solar Gregorian calendar. Because a lunar year is roughly eleven days shorter than a solar year, our sacred months cycle beautifully through all the natural seasons over time. 
+              The Islamic Hijri calendar is governed entirely by the phases of the moon. This is a profound contrast to the solar Gregorian calendar. Because a lunar year is roughly eleven days shorter than a solar year our sacred months cycle beautifully through all the natural seasons over time. 
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
               This magnificent design means a Muslim will experience the fasting of Ramadan and the pilgrimage of Hajj in the long heat of summer and the quiet cold of winter over their lifetime. It is a divine rhythm that connects us directly to the natural creation of Allah.
@@ -95,10 +96,10 @@ export default function Heritage() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              When the Prophet Muhammad Peace Be Upon Him migrated to Madinah, the very first act he performed was establishing Masjid Quba. It is a mosque founded entirely upon piety and purity. 
+              When the Prophet Muhammad Peace Be Upon Him migrated to Madinah the very first act he performed was establishing Masjid Quba. It is a mosque founded entirely upon piety and purity. 
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              Shortly after this, Masjid an Nabawi was built. This is the mosque of the Prophet and the second holiest site in Islam. It became the beating heart of the early Muslim community and serves today as the peaceful resting place of the final messenger.
+              Shortly after this Masjid an Nabawi was built. This is the mosque of the Prophet and the second holiest site in Islam. It became the beating heart of the early Muslim community and serves today as the peaceful resting place of the final messenger.
             </p>
           </div>
         </div>
@@ -117,19 +118,56 @@ export default function Heritage() {
           </div>
         </div>
 
-        {/* The Abrahamic Brotherhood */}
+        {/* The Blessed Bloodline */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
           <div className="md:w-1/3">
             <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
-              Abrahamic Brotherhood
+              The Blessed Bloodline
             </h3>
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              Islam is the final chapter and the pure continuation of the exact same message given to all the great prophets of the past. We hold deep reverence for the lineage of Ibrahim Alayhis Salaam. We honour Musa Alayhis Salaam and the revelation of the Torah. We deeply respect Dawud Alayhis Salaam and the Psalms. 
+              Allah chose the most noble of human beings to serve as His messengers linking them through a blessed bloodline and a single unified message. The Quran confirms they are descendants of one another. This magnificent lineage begins with Adam Alayhis Salaam the father of humanity and flows through the steadfastness of Nuh Alayhis Salaam.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
+              It shines through Ibrahim Alayhis Salaam the friend of Allah. From his two righteous sons Ismael and Ishaq the family tree branches into a majestic legacy. It continues through the beautiful patience of Yakoub and Yusuf Alayhimus Salaam. We hold profound reverence for Musa and Haroun Alayhimus Salaam who stood against tyranny and Yahya Alayhis Salaam who spoke the pure truth.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              Furthermore, Muslims share a profound connection with Christians through our love for Isa Alayhis Salaam the Messiah. We firmly believe in his miraculous birth and we eagerly anticipate his glorious return to earth. His return will restore supreme justice and unite the believers in peace. This shared heritage beautifully links the Abrahamic faiths together under the worship of the One Creator.
+              This unbroken chain of brotherhood and blood connects us deeply with our Jewish and Christian neighbours because a Muslim cannot be a true believer without accepting and honouring every single one of these magnificent prophets.
+            </p>
+          </div>
+        </div>
+
+        {/* The Messiah and The Seal */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+          <div className="md:w-1/3">
+            <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
+              The Messiah & The Seal
+            </h3>
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
+              Islam holds immense love for Isa Alayhis Salaam the Messiah Jesus. We believe with absolute certainty in his miraculous birth to the Virgin Maryam and we eagerly await his return to earth to restore supreme justice. To deny him is to step outside the fold of Islam entirely. 
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
+              This golden chain is finally sealed by the Prophet Muhammad Peace Be Upon Him the best of mankind. He did not bring a new religion but rather the final perfected and universal chapter of the exact same message given to all the prophets before him completing the favour of Allah upon humanity.
+            </p>
+          </div>
+        </div>
+
+        {/* The Family and The Companions */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+          <div className="md:w-1/3">
+            <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
+              The Noble Companions
+            </h3>
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
+              Our love for the Prophet Muhammad Peace Be Upon Him is incomplete without a profound love for his blessed family the Ahlul Bayt. They carried his light and legacy with unwavering devotion and purity. Alongside them we hold immense honour for the Sahabah the companions who stood by the Prophet through the hardest of trials.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
+              We deeply respect and send peace upon Abu Bakr as Siddiq who was the closest friend and the very first to believe and Umar ibn al Khattab whose immense strength became the absolute shield of the early believers. These noble souls along with all those closest to the Prophet were promised the highest ranks in Jannatul Firdous. Their sacrifices laid the very foundation of the Ummah we belong to today.
             </p>
           </div>
         </div>
