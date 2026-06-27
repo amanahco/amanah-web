@@ -113,7 +113,7 @@ export default function Heritage() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              For the early years of the revelation the Muslims turned their faces in prayer towards Masjid Al Aqsa in Jerusalem. It was a profound direction connecting them directly to the lineage of the ancient prophets. Yet the heart of the Prophet Muhammad Peace Be Upon Him deeply yearned to face the Qabah the original house built by Ibrahim Alayhis Salaam.
+              For the early years of the revelation the Muslims turned their faces in prayer towards Masjid Al Aqsa. It was a profound direction connecting them directly to the lineage of the ancient prophets. Yet the heart of the Prophet Muhammad Peace Be Upon Him deeply yearned to face the Qabah the original house built by Ibrahim Alayhis Salaam.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
               During a prayer congregation in Madinah the divine revelation descended instructing the Prophet to turn his face towards Makkah. Without hesitation he and the entire congregation turned beautifully in the very middle of their prayer. The sacred site where this monumental obedience took place is known today as Masjid al Qiblatayn the Mosque of the Two Qiblas. It stands as an eternal testament to divine timing and absolute devotion.
@@ -130,7 +130,7 @@ export default function Heritage() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              Masjid Al Aqsa in Jerusalem holds immense spiritual weight for all Muslims. It was the destination of the miraculous night journey known as Al Isra wal Miraj. It was here that our beloved Prophet Muhammad Peace Be Upon Him ascended to heaven. During this night he also led all the previous prophets in prayer. He stood before Allah alongside figures from Adam Alayhis Salaam to Isa Alayhis Salaam. It is a powerful symbol of unity and the unbroken chain of prophethood.
+              Masjid Al Aqsa in Jerusalem Palestine holds immense spiritual weight for all Muslims. It was the destination of the miraculous night journey known as Al Isra wal Miraj. It was here that our beloved Prophet Muhammad Peace Be Upon Him ascended to heaven. During this night he also led all the previous prophets in prayer. He stood before Allah alongside figures from Adam Alayhis Salaam to Isa Alayhis Salaam. It is a powerful symbol of unity and the unbroken chain of prophethood.
             </p>
           </div>
         </div>
@@ -181,10 +181,10 @@ export default function Heritage() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              Our love for the Prophet Muhammad Peace Be Upon Him is incomplete without a profound love for his blessed family the Ahlul Bayt. They carried his light and legacy with unwavering devotion and purity. Alongside them we hold immense honour for the Sahabah the companions who stood by the Prophet through the hardest of trials.
+              Our love for the Prophet Muhammad Peace Be Upon Him is incomplete without a profound love for his blessed family the Ahlul Bayt including his beloved grandsons Hasan and Husayn RA. They carried his light and legacy with unwavering devotion and purity. Alongside them we hold immense honour for the Sahabah the companions who stood by the Prophet through the hardest of trials and all the righteous souls explicitly named in the Quran by Allah.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              We deeply respect and send peace upon Abu Bakr as Siddiq who was the closest friend and the very first to believe and Umar ibn al Khattab whose immense strength became the absolute shield of the early believers. These noble souls along with all those closest to the Prophet were promised the highest ranks in Jannatul Firdous. Their sacrifices laid the very foundation of the Ummah we belong to today.
+              We deeply respect and send peace upon Abu Bakr as Siddiq RA who was the closest friend and the very first to believe and Umar ibn al Khattab RA whose immense strength became the absolute shield of the early believers. These noble souls along with all those closest to the Prophet were promised the highest ranks in Jannatul Firdous. Their sacrifices laid the very foundation of the Ummah we belong to today.
             </p>
           </div>
         </div>
