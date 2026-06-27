@@ -104,6 +104,23 @@ export default function Heritage() {
           </div>
         </div>
 
+        {/* The Mosque of Two Qiblas */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+          <div className="md:w-1/3">
+            <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
+              Mosque of Two Qiblas
+            </h3>
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
+              For the early years of the revelation the Muslims turned their faces in prayer towards Masjid Al Aqsa in Jerusalem. It was a profound direction connecting them directly to the lineage of the ancient prophets. Yet the heart of the Prophet Muhammad Peace Be Upon Him deeply yearned to face the Qabah the original house built by Ibrahim Alayhis Salaam.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
+              During a prayer congregation in Madinah the divine revelation descended instructing the Prophet to turn his face towards Makkah. Without hesitation he and the entire congregation turned beautifully in the very middle of their prayer. The sacred site where this monumental obedience took place is known today as Masjid al Qiblatayn the Mosque of the Two Qiblas. It stands as an eternal testament to divine timing and absolute devotion.
+            </p>
+          </div>
+        </div>
+
         {/* The Night Journey */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
           <div className="md:w-1/3">
