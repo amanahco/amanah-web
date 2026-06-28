@@ -88,7 +88,7 @@ export default function Causes() {
               The Prophet with his infinite wisdom smiled upon them. He taught them that wealth is not the only currency of charity. He revealed that every single time a believer says SubhanAllah it is a charity. Every Alhamdulillah is a charity. Every Allahu Akbar is a charity.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              This profound truth is the very foundation of the Amanah Vault and our upcoming tactile dhikr ring. Even if you do not have worldly wealth to give every single silent slide of the titanium ring and every count logged in your digital sanctuary is recorded as a magnificent act of charity in the heavens.
+              This profound truth is the very foundation of the Amanah_Vault smartphone application and our upcoming tactile dhikr ring. Even if you do not have worldly wealth to give every single silent slide of the titanium ring and every count logged in your digital sanctuary is recorded as a magnificent act of charity in the heavens.
             </p>
           </div>
         </div>
@@ -140,10 +140,10 @@ export default function Causes() {
           The Charity of the Heart
         </h3>
         <p className="text-sm md:text-base leading-relaxed opacity-90 mb-10 relative z-10 max-w-xl mx-auto">
-          Begin generating your own continuous spiritual wealth today. Step into the Amanah Vault and find true sanctuary in the remembrance of Allah.
+          Begin generating your own continuous spiritual wealth today. Discover the Amanah_Vault smartphone application and find true sanctuary in the remembrance of Allah.
         </p>
-        <Link href="/vault" className="inline-block bg-[#FAF9F6] text-[#051410] px-10 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#B8860B] hover:text-[#FAF9F6] transition-all duration-300 relative z-10">
-          Enter The Vault
+        <Link href="/software" className="inline-block bg-[#FAF9F6] text-[#051410] px-10 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#B8860B] hover:text-[#FAF9F6] transition-all duration-300 relative z-10">
+          Discover Our Software
         </Link>
       </div>
 
