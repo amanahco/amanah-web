@@ -2,6 +2,7 @@
  * UI: Amanah Web Storefront Sacred Heritage
  * Description: A serene educational guide covering the Creator the lunar calendar
  * sacred sites the Golden Chain of Prophethood and the Noble Companions.
+ * Features a vertical timeline of key Islamic events.
  * Designed with strict Quiet Luxury aesthetics.
  * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
@@ -20,6 +21,7 @@ export default function Heritage() {
          </Link>
          <div className="flex gap-6 md:gap-10">
            <Link href="/invitation" className="hover:text-[#B8860B] transition-colors duration-300">The Invitation</Link>
+           <Link href="/causes" className="hover:text-[#B8860B] transition-colors duration-300">The Noble Causes</Link>
            <Link href="/quran" className="hover:text-[#B8860B] transition-colors duration-300">The Quran</Link>
          </div>
       </nav>
@@ -37,7 +39,7 @@ export default function Heritage() {
         </p>
       </div>
 
-      <div className="w-full max-w-4xl flex flex-col gap-16 md:gap-24 mb-24 text-left">
+      <div className="w-full max-w-4xl flex flex-col gap-16 md:gap-24 mb-32 text-left">
 
         {/* The Creator and His Creation */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
@@ -121,7 +123,7 @@ export default function Heritage() {
           </div>
         </div>
 
-        {/* The Night Journey */}
+        {/* The Night Journey & Sidratul Muntaha */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
           <div className="md:w-1/3">
             <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
@@ -129,8 +131,11 @@ export default function Heritage() {
             </h3>
           </div>
           <div className="md:w-2/3">
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
+              Masjid Al Aqsa in Jerusalem Palestine holds immense spiritual weight for all Muslims. It was the destination of the miraculous night journey known as Al Isra wal Miraj. From the sacred precincts of Makkah to the blessed lands of Al Aqsa the Prophet Muhammad Peace Be Upon Him embarked on a journey that defied the very laws of time and space. During this night he also led all the previous prophets in prayer standing before Allah alongside figures from Adam Alayhis Salaam to Isa Alayhis Salaam. It is a powerful symbol of unity and the unbroken chain of prophethood.
+            </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              Masjid Al Aqsa in Jerusalem Palestine holds immense spiritual weight for all Muslims. It was the destination of the miraculous night journey known as Al Isra wal Miraj. It was here that our beloved Prophet Muhammad Peace Be Upon Him ascended to heaven. During this night he also led all the previous prophets in prayer. He stood before Allah alongside figures from Adam Alayhis Salaam to Isa Alayhis Salaam. It is a powerful symbol of unity and the unbroken chain of prophethood.
+              Yet the miraculous night did not end in Jerusalem. It ascended through the seven heavens revealing the magnificent reality of the unseen. At the absolute pinnacle of this divine ascent he reached Sidratul Muntaha The Lote Tree of the Utmost Boundary. This represents the majestic frontier where no creation no angel and no other prophet had ever passed. It was here in a state of ultimate purity and proximity that our beloved Prophet stood in the direct divine presence cementing the eternal bond between the Creator and the Ummah.
             </p>
           </div>
         </div>
@@ -189,6 +194,83 @@ export default function Heritage() {
           </div>
         </div>
 
+      </div>
+
+      {/* The Sacred Timeline */}
+      <div className="w-full max-w-4xl flex flex-col items-center mb-24">
+        <h3 className="text-3xl md:text-4xl font-serif text-[#051410] mb-16 text-center">
+          The Timeline of Light
+        </h3>
+
+        <div className="relative w-full max-w-2xl">
+          {/* Vertical Gold Line */}
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[1px] bg-[#B8860B]/30 transform md:-translate-x-1/2"></div>
+
+          {/* Timeline Nodes */}
+          <div className="flex flex-col gap-12">
+            
+            {/* Event 1 */}
+            <div className="relative flex flex-col md:flex-row items-start md:items-center w-full group">
+              <div className="hidden md:flex w-1/2 justify-end pr-12 text-right">
+                <h4 className="text-xl font-serif text-[#B8860B]">The First House</h4>
+              </div>
+              <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-[#FAF9F6] border-2 border-[#B8860B] rounded-full transform -translate-x-[5px] md:-translate-x-1/2 mt-1.5 md:mt-0 group-hover:bg-[#B8860B] transition-colors duration-300"></div>
+              <div className="pl-12 md:pl-12 md:w-1/2">
+                <h4 className="text-xl font-serif text-[#B8860B] md:hidden mb-2">The First House</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  Prophet Ibrahim and his son Ismail raise the foundations of the Kaaba establishing the eternal focal point of pure monotheism.
+                </p>
+              </div>
+            </div>
+
+            {/* Event 2 */}
+            <div className="relative flex flex-col md:flex-row items-start md:items-center w-full group">
+              <div className="hidden md:flex w-1/2 justify-end pr-12 text-right">
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  The Prophet Muhammad Peace Be Upon Him is born in Makkah bringing the final message of divine mercy to all of humanity.
+                </p>
+              </div>
+              <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-[#FAF9F6] border-2 border-[#B8860B] rounded-full transform -translate-x-[5px] md:-translate-x-1/2 mt-1.5 md:mt-0 group-hover:bg-[#B8860B] transition-colors duration-300"></div>
+              <div className="pl-12 md:pl-12 md:w-1/2">
+                <h4 className="text-xl font-serif text-[#B8860B] mb-2">Year of the Elephant</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed md:hidden">
+                  The Prophet Muhammad Peace Be Upon Him is born in Makkah bringing the final message of divine mercy to all of humanity.
+                </p>
+              </div>
+            </div>
+
+            {/* Event 3 */}
+            <div className="relative flex flex-col md:flex-row items-start md:items-center w-full group">
+              <div className="hidden md:flex w-1/2 justify-end pr-12 text-right">
+                <h4 className="text-xl font-serif text-[#B8860B]">The First Revelation</h4>
+              </div>
+              <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-[#FAF9F6] border-2 border-[#B8860B] rounded-full transform -translate-x-[5px] md:-translate-x-1/2 mt-1.5 md:mt-0 group-hover:bg-[#B8860B] transition-colors duration-300"></div>
+              <div className="pl-12 md:pl-12 md:w-1/2">
+                <h4 className="text-xl font-serif text-[#B8860B] md:hidden mb-2">The First Revelation</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  In the absolute quiet of Cave Hira the Angel Jibril delivers the first majestic verses of the Noble Quran. Read in the name of your Lord.
+                </p>
+              </div>
+            </div>
+
+            {/* Event 4 */}
+            <div className="relative flex flex-col md:flex-row items-start md:items-center w-full group">
+              <div className="hidden md:flex w-1/2 justify-end pr-12 text-right">
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  The momentous migration from Makkah to the illuminated city of Madinah marking the official beginning of the Islamic calendar.
+                </p>
+              </div>
+              <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-[#FAF9F6] border-2 border-[#B8860B] rounded-full transform -translate-x-[5px] md:-translate-x-1/2 mt-1.5 md:mt-0 group-hover:bg-[#B8860B] transition-colors duration-300"></div>
+              <div className="pl-12 md:pl-12 md:w-1/2">
+                <h4 className="text-xl font-serif text-[#B8860B] mb-2">The Hijrah</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed md:hidden">
+                  The momentous migration from Makkah to the illuminated city of Madinah marking the official beginning of the Islamic calendar.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
 
       {/* Gentle Call to Action */}
