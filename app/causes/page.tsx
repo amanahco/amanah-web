@@ -1,7 +1,7 @@
 /**
  * UI: Amanah Web Storefront The Noble Causes
  * Description: A serene educational guide on Zakat Fitranah and continuous charity.
- * Highlights trusted bridges like Ummah Welfare Trust and Islamic Relief.
+ * Features the Sunnah of everyday charity and trusted donation bridges.
  * Designed with strict Quiet Luxury aesthetics.
  * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
@@ -88,13 +88,58 @@ export default function Causes() {
               The Prophet with his infinite wisdom smiled upon them. He taught them that wealth is not the only currency of charity. He revealed that every single time a believer says SubhanAllah it is a charity. Every Alhamdulillah is a charity. Every Allahu Akbar is a charity.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              This profound truth is the very foundation of the Amanah_Vault smartphone application and our upcoming tactile dhikr ring. Even if you do not have worldly wealth to give every single silent slide of the titanium ring and every count logged in your digital sanctuary is recorded as a magnificent act of charity in the heavens.
+              This profound truth is the very foundation of the Amanah Application and our upcoming tactile dhikr ring. Even if you do not have worldly wealth to give every single silent slide of the titanium ring and every count logged in your digital sanctuary is recorded as a magnificent act of charity in the heavens.
             </p>
           </div>
         </div>
 
+        {/* The Sunnah of Charity Grid */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start mt-8">
+          <div className="md:w-1/3">
+            <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
+              The Sunnah of Charity
+            </h3>
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-10">
+              Charity in Islam extends far beyond monetary wealth. The Prophet Muhammad Peace Be Upon Him taught us that everyday acts of kindness physical support and spiritual devotion carry the exact same divine weight.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <div className="bg-white p-8 rounded-2xl border border-[#B8860B]/20 shadow-sm">
+                <h4 className="text-[#B8860B] font-bold tracking-widest uppercase text-[10px] mb-3">Acts of Kindness</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  A simple sincere smile directed at another person is an immediate charity. Removing a harmful obstacle from a path or initiating peace by greeting someone carries immense eternal reward.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl border border-[#B8860B]/20 shadow-sm">
+                <h4 className="text-[#B8860B] font-bold tracking-widest uppercase text-[10px] mb-3">Physical Help</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  Assisting the elderly supporting those with disabilities planting greenery for the earth or even providing water to a thirsty animal are all profound acts of continuous charity.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl border border-[#B8860B]/20 shadow-sm">
+                <h4 className="text-[#B8860B] font-bold tracking-widest uppercase text-[10px] mb-3">Social Support</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  Teaching someone to read offering sincere counsel reconciling two disputing parties and dedicating pure effort to comforting your family are elevated as noble spiritual acts.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl border border-[#B8860B]/20 shadow-sm">
+                <h4 className="text-[#B8860B] font-bold tracking-widest uppercase text-[10px] mb-3">Spiritual Devotion</h4>
+                <p className="text-sm text-[#051410]/80 leading-relaxed">
+                  Every step walked toward the mosque every silent prayer made for a friend facing hardship and every whisper of Dhikr in the remembrance of Allah is recorded as a distinct charity.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         {/* The Trusted Bridges */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start pt-8 border-t border-[#B8860B]/10">
           <div className="md:w-1/3">
             <h3 className="text-2xl font-serif text-[#B8860B] border-b border-[#B8860B]/20 pb-4 inline-block">
               The Trusted Bridges
@@ -140,7 +185,7 @@ export default function Causes() {
           The Charity of the Heart
         </h3>
         <p className="text-sm md:text-base leading-relaxed opacity-90 mb-10 relative z-10 max-w-xl mx-auto">
-          Begin generating your own continuous spiritual wealth today. Discover the Amanah_Vault smartphone application and find true sanctuary in the remembrance of Allah.
+          Begin generating your own continuous spiritual wealth today. Discover the Amanah Application and find true sanctuary in the remembrance of Allah.
         </p>
         <Link href="/software" className="inline-block bg-[#FAF9F6] text-[#051410] px-10 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#B8860B] hover:text-[#FAF9F6] transition-all duration-300 relative z-10">
           Discover Our Software
