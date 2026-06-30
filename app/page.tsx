@@ -5,7 +5,8 @@
  * Description: Background anchored to top center.
  * Double footer glitch eradicated. 
  * Cross pollination links added for the Amanah Application.
- * The Invitation Dawah portal Sacred Heritage and The Noble Causes added to main navigation.
+ * The Invitation Dawah portal, Sacred Heritage, and The Noble Causes added.
+ * Privacy Pledge and The Collection seamlessly woven into a perfect 3x3 grid.
  * Live Hijri and Gregorian date anchored to the top.
  * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
@@ -61,7 +62,7 @@ export default function Home() {
           {dateText}
         </div>
 
-        {/* Expanded Top Navigation Menu: Perfectly balanced three tier system */}
+        {/* Expanded Top Navigation Menu: Perfectly balanced 3x3 grid system */}
         <nav className="w-full flex flex-col items-center justify-center gap-y-3 md:gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#B8860B] mb-12 md:mb-16 drop-shadow-md uppercase">
           
           {/* Tier 1: Ethos & Knowledge */}
@@ -71,16 +72,18 @@ export default function Home() {
             <Link href="/heritage" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Heritage</Link>
           </div>
 
-          {/* Tier 2: Digital & Physical */}
+          {/* Tier 2: The Physical & Digital Ecosystem */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
             <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
             <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
-            <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
+            <Link href="/collection" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Collection</Link>
           </div>
 
-          {/* Tier 3: The Ummah */}
+          {/* Tier 3: Foundations & Trust */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
+            <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
             <Link href="/causes" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Noble Causes</Link>
+            <Link href="/pledge" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Privacy Pledge</Link>
           </div>
 
         </nav>
