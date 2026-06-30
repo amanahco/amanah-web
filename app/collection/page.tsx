@@ -3,6 +3,7 @@
  * Description: Premium artisanal storefront for Tasbihs Takkes and Garments.
  * Focuses on accessible premium craftsmanship materials and absolute modesty.
  * Strictly anonymous sourcing to protect business IP. 
+ * Features The Amanah Silhouette (Modesty Guide) Zero Plastic Unboxing and Gifting.
  * Designed with strict Quiet Luxury aesthetics. No faces/eyes in imagery.
  * Amanah Collective Ltd ©️ 2026. All Rights Reserved.
  */
@@ -38,14 +39,14 @@ export default function Collection() {
         </p>
       </div>
 
-      <div className="w-full max-w-6xl flex flex-col gap-24 mb-24">
+      <div className="w-full max-w-6xl flex flex-col gap-24 mb-32">
 
         {/* The Tasbih Collection */}
         <section className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="w-full lg:w-1/2 aspect-square bg-[#051410]/5 relative overflow-hidden flex items-center justify-center p-8">
             {/* Visual Guideline Placeholder: Heavy focus on the rich textures of the beads resting on warm alabaster cotton. No faces. */}
             <div className="absolute inset-0 border border-[#B8860B]/20 m-4"></div>
-            <p className="text-[#051410]/40 text-xs tracking-widest uppercase text-center font-bold">
+            <p className="text-[#051410]/40 text-xs tracking-widest uppercase text-center font-bold px-4">
               [Image: Macro detail of Tasbih beads resting on textured fabric. Framed by Amanah Arch.]
             </p>
           </div>
@@ -65,7 +66,7 @@ export default function Collection() {
           <div className="w-full lg:w-1/2 aspect-square bg-[#051410]/5 relative overflow-hidden flex items-center justify-center p-8">
             {/* Visual Guideline Placeholder: Abstract lifestyle shot of the Takke folded or resting. No faces or eyes. */}
             <div className="absolute inset-0 border border-[#B8860B]/20 m-4"></div>
-            <p className="text-[#051410]/40 text-xs tracking-widest uppercase text-center font-bold">
+            <p className="text-[#051410]/40 text-xs tracking-widest uppercase text-center font-bold px-4">
               [Image: Premium Takke resting gracefully on a geometric prayer mat. Natural soft lighting.]
             </p>
           </div>
@@ -85,7 +86,7 @@ export default function Collection() {
           <div className="w-full lg:w-1/2 aspect-square bg-[#051410]/5 relative overflow-hidden flex items-center justify-center p-8">
             {/* Visual Guideline Placeholder: Fabric texture focus, olive linen draping. No faces or free-mixing. */}
             <div className="absolute inset-0 border border-[#B8860B]/20 m-4"></div>
-            <p className="text-[#051410]/40 text-xs tracking-widest uppercase text-center font-bold">
+            <p className="text-[#051410]/40 text-xs tracking-widest uppercase text-center font-bold px-4">
               [Image: Close up of olive linen draped elegantly over a hanger within the Amanah Archway.]
             </p>
           </div>
@@ -102,14 +103,54 @@ export default function Collection() {
 
       </div>
 
-      {/* Gentle Call to Action */}
-      <div className="w-full max-w-4xl bg-white border border-[#B8860B]/20 p-12 md:p-16 rounded-2xl text-center shadow-sm">
-        <h3 className="text-2xl font-serif text-[#051410] mb-4">
+      {/* The Modesty Fit Guide & The Sanctuary Arrival (Eco Packaging) */}
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+        
+        {/* The Amanah Silhouette */}
+        <div className="bg-white border border-[#B8860B]/20 p-12 lg:p-16 rounded-2xl shadow-sm flex flex-col justify-center text-center">
+          <h3 className="text-[#B8860B] font-bold tracking-[0.2em] uppercase text-xs mb-4">The Modesty Guide</h3>
+          <h4 className="text-2xl font-serif text-[#051410] mb-6">The Amanah Silhouette</h4>
+          <p className="text-sm md:text-base leading-relaxed text-[#051410]/80 mb-8">
+            True elegance is found in concealment. We do not use standard sizing charts because our garments are fundamentally engineered differently. The Amanah Silhouette is intentionally designed to drape away from the physical form ensuring the shape of the body is respectfully veiled. This provides you with ultimate peace of mind knowing your attire upholds the highest standards of modesty.
+          </p>
+          <div className="w-full h-[1px] bg-[#B8860B]/20 mb-8 mx-auto max-w-xs"></div>
+          <p className="text-[10px] tracking-widest uppercase text-[#B8860B] font-bold">
+            [Image: Abstract sketch of the relaxed garment drape replacing clinical sizing charts.]
+          </p>
+        </div>
+
+        {/* The Sanctuary Arrival (Zero Plastic) */}
+        <div className="bg-[#051410] text-[#FAF9F6] p-12 lg:p-16 rounded-2xl shadow-xl flex flex-col justify-center text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#B8860B]/10 rounded-bl-full blur-2xl"></div>
+          <h3 className="text-[#B8860B] font-bold tracking-[0.2em] uppercase text-xs mb-4 relative z-10">Ethical Stewardship</h3>
+          <h4 className="text-2xl font-serif mb-6 relative z-10">The Sanctuary Arrival</h4>
+          <p className="text-sm md:text-base leading-relaxed opacity-90 mb-8 relative z-10">
+            We are appointed as stewards of the earth. In absolute reverence for the creation of Allah the arrival of your Amanah physical goods involves zero plastic. Your items are secured in heavy weight textured recycled paper and sealed with the pristine Amanah mark. It is designed to feel like a deeply intentional gift rather than a fleeting delivery.
+          </p>
+          <div className="w-full h-[1px] bg-[#B8860B]/30 mb-8 mx-auto max-w-xs relative z-10"></div>
+          <p className="text-[10px] tracking-widest uppercase text-[#B8860B] font-bold relative z-10">
+            [Image: Close up of the textured paper packaging with the Amanah Arch seal.]
+          </p>
+        </div>
+
+      </div>
+
+      {/* The Gift of Amanah Checkout Feature */}
+      <div className="w-full max-w-4xl border-t border-[#B8860B]/20 pt-20 mb-12 text-center flex flex-col items-center">
+        <h3 className="text-3xl font-serif text-[#051410] mb-6">
           The Intention of Gifting
         </h3>
-        <p className="text-sm md:text-base leading-relaxed text-[#051410]/70 mb-8 max-w-xl mx-auto">
-          "Exchange gifts as that will lead to increasing your love to one another." When checking out select the Amanah Gift option to include a personal Dua for a loved one.
+        <p className="text-base leading-relaxed text-[#051410]/80 mb-10 max-w-2xl">
+          The Prophet Muhammad Peace Be Upon Him taught us to exchange gifts to increase our love for one another. When securing your physical goods you may select the Gift of Amanah option at checkout. We will seamlessly include a blank textured card for your personal Dua or print your message directly before shipping it in our zero plastic sanctuary packaging.
         </p>
+        <div className="bg-white border-2 border-[#051410] rounded-full px-8 py-4 flex items-center gap-4 hover:bg-[#FAF9F6] transition-colors cursor-pointer">
+          <div className="w-5 h-5 border-2 border-[#B8860B] rounded flex items-center justify-center">
+            <div className="w-3 h-3 bg-[#B8860B]"></div>
+          </div>
+          <span className="text-xs uppercase tracking-widest font-bold text-[#051410]">
+            Add The Gift of Amanah
+          </span>
+        </div>
       </div>
 
     </main>
