@@ -58,7 +58,7 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-3xl flex flex-col items-center text-center mt-8 px-6 md:px-10">
 
         {/* The Live Daily Date */}
-        <div className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#0b2f28]/70 uppercase mb-8 h-4">
+        <div className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#051410]/70 uppercase mb-8 h-4">
           {dateText}
         </div>
 
@@ -67,29 +67,29 @@ export default function Home() {
           
           {/* Tier 1: Ethos & Knowledge */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
-            <Link href="/manifesto" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Manifesto</Link>
-            <Link href="/invitation" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Invitation</Link>
-            <Link href="/heritage" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Heritage</Link>
+            <Link href="/manifesto" className="cursor-pointer hover:text-[#051410] transition-colors">Manifesto</Link>
+            <Link href="/invitation" className="cursor-pointer hover:text-[#051410] transition-colors">The Invitation</Link>
+            <Link href="/heritage" className="cursor-pointer hover:text-[#051410] transition-colors">Heritage</Link>
           </div>
 
           {/* Tier 2: The Physical & Digital Ecosystem */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
-            <Link href="/software" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Software</Link>
-            <Link href="/hardware" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Hardware</Link>
-            <Link href="/collection" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Collection</Link>
+            <Link href="/software" className="cursor-pointer hover:text-[#051410] transition-colors">Software</Link>
+            <Link href="/hardware" className="cursor-pointer hover:text-[#051410] transition-colors">Hardware</Link>
+            <Link href="/collection" className="cursor-pointer hover:text-[#051410] transition-colors">The Collection</Link>
           </div>
 
           {/* Tier 3: Foundations & Trust */}
           <div className="flex justify-center items-center gap-x-4 md:gap-x-8">
-            <Link href="/quran" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Quran</Link>
-            <Link href="/causes" className="cursor-pointer hover:text-[#0b2f28] transition-colors">The Noble Causes</Link>
-            <Link href="/pledge" className="cursor-pointer hover:text-[#0b2f28] transition-colors">Privacy Pledge</Link>
+            <Link href="/quran" className="cursor-pointer hover:text-[#051410] transition-colors">The Quran</Link>
+            <Link href="/causes" className="cursor-pointer hover:text-[#051410] transition-colors">The Noble Causes</Link>
+            <Link href="/pledge" className="cursor-pointer hover:text-[#051410] transition-colors">Privacy Pledge</Link>
           </div>
 
         </nav>
 
         {/* Brand Header */}
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-[#0b2f28] mb-4 drop-shadow-sm">
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-[#051410] mb-4 drop-shadow-sm">
           Amanah
         </h1>
         <h2 className="text-xs md:text-sm font-bold tracking-[0.25em] text-[#B8860B] mb-12 uppercase drop-shadow-sm">
@@ -97,7 +97,7 @@ export default function Home() {
         </h2>
 
         {/* The Manifesto Block perfectly matched to the lower text styles */}
-        <div className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed space-y-7 max-w-xl mx-auto">
+        <div className="text-[#051410]/90 text-sm md:text-base leading-relaxed space-y-7 max-w-xl mx-auto">
           <p>
             Built on uncompromising modesty, privacy first technology, and zero tracking.
           </p>
@@ -111,13 +111,13 @@ export default function Home() {
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
             In Development
           </div>
-          <h3 className="text-[#0b2f28] text-2xl md:text-3xl font-bold mb-6">
+          <h3 className="text-[#051410] text-2xl md:text-3xl font-bold mb-6">
             Aerospace Titanium & Ceramic
           </h3>
-          <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
+          <p className="text-[#051410]/90 text-sm md:text-base leading-relaxed mb-12">
             A physical extension of your digital sanctuary. We are engineering a premium wearable device with haptic feedback, completely free of screens and digital distractions. Pure privacy. Quiet luxury.
           </p>
-          <Link href="/hardware" className="inline-block bg-[#0b2f28] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#0b2f28] border-2 border-[#0b2f28] transition-all duration-300">
+          <Link href="/hardware" className="inline-block bg-[#051410] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#051410] border-2 border-[#051410] transition-all duration-300">
             Explore the Hardware
           </Link>
         </div>
@@ -127,13 +127,13 @@ export default function Home() {
           <div className="text-[#B8860B] text-xs tracking-[0.1em] font-bold mb-4 uppercase">
             Pending Review
           </div>
-          <h3 className="text-[#0b2f28] text-2xl md:text-3xl font-bold mb-6">
+          <h3 className="text-[#051410] text-2xl md:text-3xl font-bold mb-6">
             The Amanah Application
           </h3>
-          <p className="text-[#0b2f28]/90 text-sm md:text-base leading-relaxed mb-12">
+          <p className="text-[#051410]/90 text-sm md:text-base leading-relaxed mb-12">
             Your offline sanctuary. Featuring the true tactile Indo Pak Quran engine, minimalist Qibla compass, and complete Jumu'ah hub with zero behavioural tracking.
           </p>
-          <Link href="/software" className="inline-block bg-[#0b2f28] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#0b2f28] border-2 border-[#0b2f28] transition-all duration-300">
+          <Link href="/software" className="inline-block bg-[#051410] text-[#FAF9F6] px-10 py-4 text-xs uppercase tracking-widest font-bold hover:bg-transparent hover:text-[#051410] border-2 border-[#051410] transition-all duration-300">
             Discover the App
           </Link>
         </div>
