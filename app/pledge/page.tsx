@@ -48,7 +48,7 @@ export default function Pledge() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              The modern digital ecosystem is built on extraction. Applications monitor your habits track your location and monetize your attention. At Amanah we fundamentally reject this model. Your spiritual journey is sacred. We have engineered our software with a total absence of behavioral tracking ensuring your focus remains unbroken and your data remains yours alone.
+              The modern digital ecosystem is built on extraction. Applications monitor your habits track your location and monetise your attention. At Amanah we fundamentally reject this model. Your spiritual journey is sacred. We have engineered our software with a total absence of behavioural tracking ensuring your focus remains unbroken and your data remains yours alone.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
               There are no analytics running in the background. We do not know when you open the Quran how many times you slide your tasbih or where you establish your prayer. Absolute privacy is not a feature it is our foundation.
@@ -68,7 +68,7 @@ export default function Pledge() {
               The Amanah Application operates as a completely self contained digital vault. From the tactile Indo Pak script to the beautifully clear English transliterations every element is stored locally on your device.
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
-              By removing the need for a constant internet connection we eliminate the possibility of data transmission. You can seamlessly utilize our beginner friendly audio recitations and the Qibla compass in the absolute remotest of locations knowing your device is functioning purely as a quiet tool of remembrance.
+              By removing the need for a constant internet connection we eliminate the possibility of data transmission. You can seamlessly utilise our beginner friendly audio recitations and the Qibla compass in the absolute remotest of locations knowing your device is functioning purely as a quiet tool of remembrance.
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function Pledge() {
           </div>
           <div className="md:w-2/3">
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90 mb-6">
-              We do not employ gamification or dopamine driven feedback loops. There are no intrusive notifications urging you to return to the application and no leaderboards to compare your worship with others. 
+              We do not employ addictive reward systems or dopamine driven feedback loops. There are no intrusive notifications urging you to return to the application and no leaderboards to compare your worship with others. 
             </p>
             <p className="text-base md:text-lg leading-relaxed text-[#051410]/90">
               Worship must be driven by pure intention. Amanah exists to serve you when you seek it out and to remain completely silent when you step away. We are building a gateway to tranquility not a mechanism for digital addiction.
@@ -101,7 +101,7 @@ export default function Pledge() {
           </div>
           <h4 className="text-lg font-serif text-[#051410] mb-3">No Analytics</h4>
           <p className="text-xs text-[#051410]/70 leading-relaxed uppercase tracking-widest">
-            Zero Behavioral Tracking
+            Zero Behavioural Tracking
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function Pledge() {
           </div>
           <h4 className="text-lg font-serif text-[#051410] mb-3">Pure Utility</h4>
           <p className="text-xs text-[#051410]/70 leading-relaxed uppercase tracking-widest">
-            No Gamification
+            No Addictive Systems
           </p>
         </div>
 
